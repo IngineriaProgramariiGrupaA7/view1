@@ -1,0 +1,141 @@
+/*************************************
+************ COLOR CHART *************
+**************************************
+
+text_visible		rgb(68, 68, 68)
+text_placeholder	rgb(187, 187, 187)
+text_btn			rgb(119, 119, 119)
+
+_cyan				rgb(62, 196, 181)
+_pink				rgb(223, 115, 158)
+_green				rgb(62, 196, 109)
+
+*/
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+.flex-container {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-moz-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;    
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e0e0e0+70,e0e0e0+100 */
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #e0e0e0 70%, #e0e0e0 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #ffffff 0%, #e0e0e0 70%, #e0e0e0 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #ffffff 0%, #e0e0e0 70%, #e0e0e0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e0e0e0', GradientType=0); /* IE6-9 */
+}
+
+.flex-item{
+	text-align: center;
+	margin: auto;
+
+	/*TRAIASCA NONSTANDARDIZAREA!*/
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-moz-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.flex-item-row {
+	flex-flow: row wrap;
+	/*^ una langa alta alta*/
+}
+
+.flex-item-column {
+	flex-flow: column wrap;
+	/*^ una sub alta*/
+}
+
+.main {
+	padding: 40px;
+	background-color: rgb(255,255,255);
+	box-shadow: 0 0 5px 0 rgba(0,0,0,0.1), 
+			2px 2px 5px 0 rgba(0,0,0,0.1);
+}
+
+.buttons{
+	font-family: 'Roboto', sans-serif;
+	color: rgb(255,255,255);
+	font-weight: 500;
+}
+
+.buttons *{
+	padding: 7px 20px;
+	margin: 0 5px;
+	border-radius: 2px;
+	font-size: 15px;
+	box-shadow: 0 0 5px 0 rgba(0,0,0,0.1), 
+				2px 2px 5px 0 rgba(0,0,0,0.1);
+	-webkit-transition: all ease .2s;  				
+	-moz-transition: all ease .2s;  				
+	-o-transition: all ease .2s;    				
+	-transition: all ease .2s;  
+}
+
+h1{
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	font-weight: 300;
+}
+
+.description{
+	font-size: 18px;
+	padding: 0;
+	margin: 10px 0 20px 0;
+}
+
+.create_btn{
+	background-color: rgb(62, 196, 109);
+}
+
+.create_btn:hover{
+	background-color: rgb(255,255,255);
+	color: rgb(62, 196, 109);
+}
+
+.open_btn{
+	background-color: rgb(62, 196, 181);
+}
+
+.open_btn:hover{
+	background-color: rgb(255,255,255);
+	color: rgb(62, 196, 181);
+}
+
+a{
+	text-decoration: none;
+	color: rgb(255,255,255);
+}
