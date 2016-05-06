@@ -11,6 +11,12 @@ _pink				rgb(223, 115, 158)
 _green				rgb(62, 196, 109)
 
 */
+
+hr {
+	width: 100%;
+	opacity: 0.2;
+}
+
 body {
 	font-family: 'Roboto Condensed', sans-serif;
 	padding: 0;
@@ -19,6 +25,8 @@ body {
 }
 
 .flex {
+
+	/*TRAIASCA NONSTANDARDIZAREA!*/
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -moz-box;
@@ -36,6 +44,7 @@ body {
 	justify-content: center;
 }
 
+/*fullscreen*/
 .container {
 	position: fixed;
 	top: 0;
@@ -51,21 +60,22 @@ body {
 
 .item {
 	text-align: center;
-	margin: auto;	/*TRAIASCA NONSTANDARDIZAREA!*/
+	margin: auto;
 }
 
 .flex-item-row {
-	flex-flow: row wrap;	/*^ una langa alta alta*/
+	flex-flow: row wrap; /*^ una langa alta alta*/
 }
 
 .flex-item-column {
-	flex-flow: column wrap;	/*^ una sub alta*/
+	flex-flow: column wrap; /*^ una sub alta*/
 }
 
 .main {
 	padding: 40px;
 	background-color: rgb(255, 255, 255);
-	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 2px 2px 5px 0 rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 2px 2px 7px 0 rgba(0, 0, 0, 0.1);
 }
 
 .buttons {
@@ -74,16 +84,18 @@ body {
 	font-weight: 500;
 }
 
-.buttons * {
+.buttons a {
 	padding: 7px 20px;
 	margin: 0 5px;
 	border-radius: 2px;
 	font-size: 15px;
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 2px 2px 5px 0 rgba(0, 0, 0, 0.1);
-	-webkit-transition: all ease .1s;
-	-moz-transition: all ease .1s;
-	-o-transition: all ease .1s;
-	-transition: all ease .1s;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+}
+
+.buttons a:active {
+	background-color: rgb(230, 230, 230);
 }
 
 h1 {
@@ -102,21 +114,16 @@ h1 {
 	background-color: rgb(62, 196, 109);
 }
 
+.open_btn {
+	background-color: rgb(62, 196, 181);
+}
+
 .create_btn:hover {
 	background-color: rgb(255, 255, 255);
 	color: rgb(62, 196, 109);
 }
 
-.open_btn {
-	background-color: rgb(62, 196, 181);
-}
-
 .open_btn:hover {
 	background-color: rgb(255, 255, 255);
 	color: rgb(62, 196, 181);
-}
-
-a {
-	text-decoration: none;
-	color: rgb(255, 255, 255);
 }
