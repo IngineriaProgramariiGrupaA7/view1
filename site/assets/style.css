@@ -11,6 +11,9 @@ _pink				rgb(223, 115, 158)
 _green				rgb(62, 196, 109)
 
 */
+a {
+	text-decoration: none;
+}
 
 hr {
 	width: 100%;
@@ -22,16 +25,22 @@ body {
 	padding: 0;
 	margin: 0;
 	height: 100%;
+	color: rgb(68, 68, 68);
+}
+
+.scroll {
+	overflow-y: scroll;
 }
 
 .flex {
-
-	/*TRAIASCA NONSTANDARDIZAREA!*/
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -moz-box;
 	display: -ms-flexbox;
 	display: flex;
+}
+
+/*.center {
 	-webkit-box-align: center;
 	-webkit-align-items: center;
 	-moz-box-align: center;
@@ -42,7 +51,7 @@ body {
 	-moz-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-}
+}*/
 
 /*fullscreen*/
 .container {
@@ -58,20 +67,23 @@ body {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e0e0e0', GradientType=0); /* IE6-9 */
 }
 
+
+
 .item {
 	text-align: center;
 	margin: auto;
 }
 
-.flex-item-row {
+.row {
 	flex-flow: row wrap; /*^ una langa alta alta*/
 }
 
-.flex-item-column {
+.column {
 	flex-flow: column wrap; /*^ una sub alta*/
 }
 
 .main {
+	margin: auto;
 	padding: 40px;
 	background-color: rgb(255, 255, 255);
 	border-radius: 3px;
@@ -90,7 +102,6 @@ body {
 	border-radius: 2px;
 	font-size: 15px;
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 2px 2px 5px 0 rgba(0, 0, 0, 0.1);
-	text-decoration: none;
 	color: rgb(255, 255, 255);
 }
 
@@ -126,4 +137,40 @@ h1 {
 .open_btn:hover {
 	background-color: rgb(255, 255, 255);
 	color: rgb(62, 196, 181);
+}
+
+.form_all {
+	padding: 0;
+	height: auto;
+	width: 100%;
+}
+
+.form_section_title {
+
+	/*aliniaza titlul sectiunii la dreapta*/
+	display: block;
+	text-align: left;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	background-color: rgb(255, 255, 255);
+	color: rgb(68, 68, 68);
+	padding: 7px 15px;
+}
+
+.form_section_title:hover {
+	background-color: rgb(62, 196, 181);
+	color: rgb(255, 255, 255);
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 2px 2px 7px 0 rgba(0, 0, 0, 0.1);
+	z-index: 9999;
+}
+
+.form_content {
+
+	/*display: none;*/
+	background-color: rgb(245, 245, 245);
+	border-top-left-radius:0;
+	border-top-right-radius:0;
+	border-bottom-right-radius:3px;
+	border-bottom-left-radius:3px;
+	padding: 0 15px;
 }
