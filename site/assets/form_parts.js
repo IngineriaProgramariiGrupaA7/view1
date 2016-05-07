@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
 
-	$(".form_content").addClass("hidden");
+	$(".form_content").addClass("collapse");
 
 	$("#form_title").load("form_parts/title.html");
 
@@ -17,8 +17,8 @@ $(document).ready(function() {
 
 	$("#form_usecases").load("form_parts/usecases.html");
 
-	$(".form_section").click(function() {
-		$(this).children(".form_section_title").toggleClass("section_selected");
-		$(this).children(".form_content").toggleClass("hidden");
+	$(".form_section_title").click(function() {
+		$(this).parent().children(".form_section_title").toggleClass("section_selected");
+		$(this).parent().children(".form_content").toggleClass("collapse");
 	});
 });

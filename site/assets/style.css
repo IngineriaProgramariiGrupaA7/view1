@@ -5,6 +5,7 @@
 text_visible		rgb(68, 68, 68)
 text_placeholder	rgb(187, 187, 187)
 text_btn			rgb(119, 119, 119)
+section_bg			rgb(245, 245, 245)
 
 _cyan				rgb(62, 196, 181)
 _pink				rgb(223, 115, 158)
@@ -66,8 +67,6 @@ body {
 	background: linear-gradient(to bottom, #ffffff 0%, #e0e0e0 70%, #e0e0e0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e0e0e0', GradientType=0); /* IE6-9 */
 }
-
-
 
 .item {
 	text-align: center;
@@ -145,10 +144,11 @@ h1 {
 	width: 100%;
 }
 
-.form_section_title {
+.form_section {
+	width: 100%;
+}
 
-	/*aliniaza titlul sectiunii la dreapta*/
-	display: block;
+.form_section_title {
 	text-align: left;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
@@ -160,28 +160,41 @@ h1 {
 .form_section_title:hover {
 	background-color: rgb(62, 196, 181);
 	color: rgb(255, 255, 255);
-	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 2px 2px 7px 0 rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 0 2px 7px 0 rgba(0, 0, 0, 0.1);
+	position: relative;
 	z-index: 9999;
+}
+
+.section_selected {
+	background-color: rgb(62, 196, 181);
+	color: rgb(255, 255, 255);
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 0 2px 7px 0 rgba(0, 0, 0, 0.1);
+	z-index: 9999;
+	opacity: 0.9;
 }
 
 .form_content {
-
 	background-color: rgb(245, 245, 245);
-	border-top-left-radius:0;
-	border-top-right-radius:0;
-	border-bottom-right-radius:3px;
-	border-bottom-left-radius:3px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
 	padding: 0 15px;
 	margin-bottom: 10px;
+
+	height: 100%;
+	flex: 1;
+	flex-grow: 1;
+	flex-shrink: 1;
+	transition: all .5s;
+	overflow: hidden;
 }
 
-.section_selected{
-	background-color: rgb(62, 196, 181);
-	color: rgb(255, 255, 255);
-	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 2px 2px 7px 0 rgba(0, 0, 0, 0.1);
-	z-index: 9999;
+.collapse {
+	height: 0%;
+	flex: 0;
+	flex-grow: 0;
+	flex-shrink: 0;
+	transition: all .5s;
 }
 
-.hidden{
-	display: none;
-}
