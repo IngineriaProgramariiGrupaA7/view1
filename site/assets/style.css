@@ -166,11 +166,22 @@ h1 {
 
 .form_content {
 
-	/*display: none;*/
 	background-color: rgb(245, 245, 245);
 	border-top-left-radius:0;
 	border-top-right-radius:0;
 	border-bottom-right-radius:3px;
 	border-bottom-left-radius:3px;
 	padding: 0 15px;
+	margin-bottom: 10px;
+}
+
+.section_selected{
+	background-color: rgb(62, 196, 181);
+	color: rgb(255, 255, 255);
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 2px 2px 7px 0 rgba(0, 0, 0, 0.1);
+	z-index: 9999;
+}
+
+.hidden{
+	display: none;
 }

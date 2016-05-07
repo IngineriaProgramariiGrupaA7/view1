@@ -1,5 +1,8 @@
 
-$( document ).ready(function() {
+$(document).ready(function() {
+
+	$(".form_content").addClass("hidden");
+
 	$("#form_title").load("form_parts/title.html");
 
 	$("#form_authors").load("form_parts/authors.html");
@@ -13,4 +16,9 @@ $( document ).ready(function() {
 	$("#form_actors").load("form_parts/actors_objectives.html");
 
 	$("#form_usecases").load("form_parts/usecases.html");
+
+	$(".form_section").click(function() {
+		$(this).children(".form_section_title").toggleClass("section_selected");
+		$(this).children(".form_content").toggleClass("hidden");
+	});
 });
