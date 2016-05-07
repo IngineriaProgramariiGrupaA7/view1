@@ -1,8 +1,6 @@
 
 $(document).ready(function() {
 
-	$(".form_content").addClass("collapse");
-
 	$("#form_title").load("form_parts/title.html");
 
 	$("#form_authors").load("form_parts/authors.html");
@@ -17,8 +15,8 @@ $(document).ready(function() {
 
 	$("#form_usecases").load("form_parts/usecases.html");
 
-	$(".form_section_title").click(function() {
-		$(this).parent().children(".form_section_title").toggleClass("section_selected");
-		$(this).parent().children(".form_content").toggleClass("collapse");
-	});
+	// $(".form_section_title").click(function() {
+	// 	$(this).parent().children(".form_section_title").toggleClass("section_selected");
+	// 	$(this).parent().children(".form_content").toggleClass("collapse");
+	// });
 });
