@@ -2,14 +2,15 @@
 ************ COLOR CHART *************
 **************************************
 
-text_visible		rgb(68, 68, 68)
-text_placeholder	rgb(187, 187, 187)
-text_btn			rgb(119, 119, 119)
-section_bg			rgb(245, 245, 245)
+text_visible		#444444
+text_placeholder	#bbbbbb
+text_btn			#777777
+btn_pressed			#e6e6e6
+section_bg			#f5f5f5
 
-_cyan				rgb(62, 196, 181)
-_pink				rgb(223, 115, 158)
-_green				rgb(62, 196, 109)
+_cyan				#3ec4b5
+_pink				#df739e
+_green				#3ec46d
 
 */
 a {
@@ -26,7 +27,7 @@ body {
 	padding: 0;
 	margin: 0;
 	height: 100%;
-	color: rgb(68, 68, 68);
+	color: #444444;
 }
 
 .scroll {
@@ -61,7 +62,7 @@ body {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: #ffffff;
+	background: white;
 	background: -moz-linear-gradient(top, #ffffff 0%, #e0e0e0 70%, #e0e0e0 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, #ffffff 0%, #e0e0e0 70%, #e0e0e0 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, #ffffff 0%, #e0e0e0 70%, #e0e0e0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -84,14 +85,14 @@ body {
 .main {
 	margin: auto;
 	padding: 40px;
-	background-color: rgb(255, 255, 255);
+	background-color: white;
 	border-radius: 3px;
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 2px 2px 7px 0 rgba(0, 0, 0, 0.1);
 }
 
 .buttons {
 	font-family: 'Roboto', sans-serif;
-	color: rgb(255, 255, 255);
+	color: white;
 	font-weight: 500;
 }
 
@@ -101,11 +102,11 @@ body {
 	border-radius: 2px;
 	font-size: 15px;
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 2px 2px 5px 0 rgba(0, 0, 0, 0.1);
-	color: rgb(255, 255, 255);
+	color: white;
 }
 
 .buttons a:active {
-	background-color: rgb(230, 230, 230);
+	background-color: #e6e6e6;
 }
 
 h1 {
@@ -121,21 +122,21 @@ h1 {
 }
 
 .create_btn {
-	background-color: rgb(62, 196, 109);
+	background-color: #3ec46d;
 }
 
 .open_btn {
-	background-color: rgb(62, 196, 181);
+	background-color: #3ec4b5;
 }
 
 .create_btn:hover {
-	background-color: rgb(255, 255, 255);
-	color: rgb(62, 196, 109);
+	background-color: white;
+	color: #3ec46d;
 }
 
 .open_btn:hover {
-	background-color: rgb(255, 255, 255);
-	color: rgb(62, 196, 181);
+	background-color: white;
+	color: #3ec4b5;
 }
 
 .form_all {
@@ -152,41 +153,35 @@ h1 {
 	text-align: left;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
-	background-color: rgb(255, 255, 255);
-	color: rgb(68, 68, 68);
+	background-color: white;
+	color: #444444;
 	padding: 7px 15px;
 }
 
 .form_section_title:hover {
-	background-color: rgb(62, 196, 181);
-	color: rgb(255, 255, 255);
+	background-color: #3ec4b5;
+	color: white;
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 0 2px 7px 0 rgba(0, 0, 0, 0.1);
 	position: relative;
 	z-index: 9999;
 }
 
 .section_selected {
-	background-color: rgb(62, 196, 181);
-	color: rgb(255, 255, 255);
+	background-color: #3ec4b5;
+	color: white;
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 0 2px 7px 0 rgba(0, 0, 0, 0.1);
 	z-index: 9999;
 	opacity: 0.9;
 }
 
 .form_content {
-	background-color: rgb(245, 245, 245);
+	background-color: #f5f5f5;
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 3px;
 	border-bottom-left-radius: 3px;
 	padding: 0 15px;
 	margin-bottom: 10px;
-
 	height: 0px;
-
-
-/*	transition: all .5s;
-*/	overflow: hidden;
+	overflow: hidden;
 }
-
-
