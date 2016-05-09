@@ -81,8 +81,11 @@ body {
 	flex-flow: column wrap; /*^ una sub alta*/
 }
 
-.main {
+.flexBasis{
 	flex-basis: 960px;
+}
+
+.main {
 	margin: auto;
 	padding: 40px;
 	background-color: rgb(255, 255, 255);
@@ -184,10 +187,7 @@ h1 {
 	margin-bottom: 10px;
 
 	height: 0px;
-
-
-/*	transition: all .5s;
-*/	overflow: hidden;
+	overflow: hidden;
 }
 
 
