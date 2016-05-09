@@ -187,10 +187,7 @@ h1 {
 	margin-bottom: 10px;
 
 	height: 0px;
-
-
-/*	transition: all .5s;
-*/	overflow: hidden;
+	overflow: hidden;
 }
 
 
