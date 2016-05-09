@@ -16,6 +16,7 @@ $(".form_section_title").click(function() {
 				el.height(curHeight).animate({height: 0}, 500);
 			}
 
+			$(this).parent().children(".form_content").css('height', 'auto');
 			$(this).parent().children(".form_content").toggleClass("collapse");
 		});
 
