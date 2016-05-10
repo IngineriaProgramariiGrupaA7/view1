@@ -2,18 +2,20 @@
 ************ COLOR CHART *************
 **************************************
 
-text_visible		rgb(68, 68, 68)
-text_placeholder	rgb(187, 187, 187)
-text_btn			rgb(119, 119, 119)
-section_bg			rgb(245, 245, 245)
+text_visible		#444444
+text_placeholder	#BBBBBB
+text_btn			#777777
+btn_active			#E6E6E6
+section_bg			#F5F5F5
 
-_cyan				rgb(62, 196, 181)
-_pink				rgb(223, 115, 158)
-_green				rgb(62, 196, 109)
+_cyan				#3EC4B5
+_pink				#DF739E
+_green				#3EC46D
 
 */
 a {
 	text-decoration: none;
+	color: #444444;
 }
 
 hr {
@@ -26,7 +28,7 @@ body {
 	padding: 0;
 	margin: 0;
 	height: 100%;
-	color: rgb(68, 68, 68);
+	color: #444444;
 }
 
 .scroll {
@@ -54,6 +56,19 @@ body {
 	justify-content: center;
 }
 
+.spaceBetween {
+	-webkit-box-align: space-between;
+	-webkit-align-items: space-between;
+	-moz-box-align: space-between;
+	-ms-flex-align: space-between;
+	align-items: space-between;
+	-webkit-box-pack: space-between;
+	-webkit-justify-content: space-between;
+	-moz-box-pack: space-between;
+	-ms-flex-pack: space-between;
+	justify-content: space-between;
+}
+
 /*fullscreen*/
 .container {
 	position: fixed;
@@ -72,7 +87,6 @@ body {
 	text-align: center;
 	margin: auto;
 }*/
-
 .row {
 	flex-flow: row wrap; /*^ una langa alta alta*/
 }
@@ -81,21 +95,21 @@ body {
 	flex-flow: column wrap; /*^ una sub alta*/
 }
 
-.flexBasis{
+.flexBasis {
 	flex-basis: 960px;
 }
 
 .main {
 	margin: auto;
 	padding: 40px;
-	background-color: rgb(255, 255, 255);
+	background-color: white;
 	border-radius: 3px;
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 2px 2px 7px 0 rgba(0, 0, 0, 0.1);
 }
 
 .buttons {
 	font-family: 'Roboto', sans-serif;
-	color: rgb(255, 255, 255);
+	color: white;
 	font-weight: 500;
 }
 
@@ -105,11 +119,11 @@ body {
 	border-radius: 2px;
 	font-size: 15px;
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 2px 2px 5px 0 rgba(0, 0, 0, 0.1);
-	color: rgb(255, 255, 255);
+	color: white;
 }
 
 .buttons a:active {
-	background-color: rgb(230, 230, 230);
+	background-color: #E6E6E6;
 }
 
 h1 {
@@ -125,21 +139,21 @@ h1 {
 }
 
 .create_btn {
-	background-color: rgb(62, 196, 109);
+	background-color: #3EC46D;
 }
 
 .open_btn {
-	background-color: rgb(62, 196, 181);
+	background-color: #3EC4B5;
 }
 
 .create_btn:hover {
-	background-color: rgb(255, 255, 255);
-	color: rgb(62, 196, 109);
+	background-color: white;
+	color: #3EC46D;
 }
 
 .open_btn:hover {
-	background-color: rgb(255, 255, 255);
-	color: rgb(62, 196, 181);
+	background-color: white;
+	color: #3EC4B5;
 }
 
 .form_all {
@@ -149,45 +163,52 @@ h1 {
 }
 
 .form_section {
-	width: 100%;
+	width: 100%;	/*background-color: grey;*/
 }
 
 .form_section_title {
 	text-align: left;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
-	background-color: rgb(255, 255, 255);
-	color: rgb(68, 68, 68);
+	background-color: white;
+	color: #444444;
 	padding: 7px 15px;
 }
 
+
+svg{
+	width: 32px;
+	height: 22px;
+}
+svg:hover #phone { fill: white; }
+
+
+
+
 .form_section_title:hover {
-	background-color: rgb(62, 196, 181);
-	color: rgb(255, 255, 255);
+	background-color: #3EC4B5;
+	color: white;
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 0 2px 7px 0 rgba(0, 0, 0, 0.1);
 	position: relative;
 	z-index: 9999;
 }
 
 .section_selected {
-	background-color: rgb(62, 196, 181);
-	color: rgb(255, 255, 255);
+	background-color: #3EC4B5;
+	color: white;
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 0 2px 7px 0 rgba(0, 0, 0, 0.1);
 	z-index: 9999;
 	opacity: 0.9;
 }
 
 .form_content {
-	background-color: rgb(245, 245, 245);
+	background-color: #F5F5F5;
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 3px;
 	border-bottom-left-radius: 3px;
 	padding: 0 15px;
 	margin-bottom: 10px;
-
 	height: 0px;
 	overflow: hidden;
 }
-
-
