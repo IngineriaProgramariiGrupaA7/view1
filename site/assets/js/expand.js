@@ -11,11 +11,11 @@ $(document).ready(function() {
                 'padding-right': '15px',
                 'padding-bottom': '15px',
                 'padding-left': '15px',
-            },100);
+            },50);
 
             el.animate({
-                height: el.scrollHeight
-            }, 10, function() {
+                height: el[0].scrollHeight
+            }, 200, function() {
                 $(this).height('auto');
             });
 
@@ -23,7 +23,7 @@ $(document).ready(function() {
 
             el.animate({
                 height: el.scrollHeight
-            }, 10, function() {
+            }, 100, function() {
                 $(this).height('0');
             });
 
