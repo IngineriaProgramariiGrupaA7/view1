@@ -175,12 +175,17 @@ h1 {
 	padding: 7px 15px;
 }
 
+.arrowWrap {
+	width: 12px;
+	height: 9px;
+}
+
 svg {
 	width: 100%;
 	height: 100%;
 	opacity: 0.9;
 	fill: #444444;
-}
+} 
 
 .form_section_title:hover {
 	background-color: #3EC4B5;
