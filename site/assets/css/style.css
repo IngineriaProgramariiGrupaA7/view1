@@ -193,6 +193,7 @@ svg {
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 0 2px 7px 0 rgba(0, 0, 0, 0.1);
 	position: relative;
 	z-index: 9999;
+	cursor: pointer;
 }
 
 .form_section_title:hover a {
