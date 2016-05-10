@@ -1,0 +1,46 @@
+{ 
+	"USE_CASE" : {
+
+		"TITLE(VERB)" : "5.1 Ceva Ceva"
+
+		"OBJECTIVE/CONTEXT" : "Cutare face nu-stiu-ce"
+
+		"ACTORS" : [
+			{	
+				"name" : "Student"
+				"objective" : "sa treaca la IP"
+			}
+			{	
+				"name" : "Secretariat"
+				"objective" : "sa treaca studentu la IP"
+			}
+		]
+
+		"STEPS(ACTIONS)" : [
+			{
+				"TITLE(VERB)" : "5.1.1 Actualizare note"
+				"DESCRIPTION" : "Secretariatul actualizeaza notele studentilor"
+			}
+			{
+				"TITLE(VERB)" : "5.1.2 Vizualizare note"
+				"DESCRIPTION" : "Studentul vizualizeaza notele"
+			}
+			{
+				"TITLE(VERB)" : "5.1.3 Logare"
+				"DESCRIPTION" : "Vizitatorul incearca sa se logheze"
+			}
+		]
+
+		"RELATIONSHIPS" : [
+			{
+				"TYPE" = "association"
+				"FROM" = "Secretariat"
+				"TO" = "Logare"
+			}
+			{
+				"TYPE" = "association"
+				"FROM" = "Student"
+				"TO" = "Logare"
+			}
+		]
+}
