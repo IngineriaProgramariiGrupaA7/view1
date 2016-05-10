@@ -1,84 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Software Engineering - Form</title>
-	
-	<link href='https://fonts.googleapis.com/css?family=Roboto:300,500' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
-
-	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
-</head>
-
-<body>
-	<div class="flex container scroll">
-		<!-- ^ asta e fullscreen -->
-
-		<div class="flex column main flexBasis center">
-			<!-- ^ asta e dreptunghiu
-			care contine chestii unele sub altele-->
-			<h1 class="title">Sheet Editor</h1>
-			<p class="description">
-				Complete the form to generate diagrams.
-			</p>
-
-			<hr/>
-			
-			<div class="flex column form_all">
-
-				<div class="form_section flex column">
-					<a href="#" class="form_section_title">Title</a>
-					<div id="form_title" class="form_content collapse flex">
-					</div>
-				</div>
+	<head>
+		<meta charset="UTF-8">
+		<title>Software Engineering - Form</title>
+		
+		<link href='https://fonts.googleapis.com/css?family=Roboto:300,500' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+	</head>
+	<body>
+		<div class="flex container scroll">
+			<!-- ^ asta e fullscreen -->
+			<div class="flex column main flexBasis center">
+				<!-- ^ asta e dreptunghiu
+				care contine chestii unele sub altele-->
+				<h1 class="title">Sheet Editor</h1>
+				<p class="description">
+					Complete the form to generate diagrams.
+				</p>
+				<hr/>
 				
-				<div class="form_section flex column">
-					<a href="#" class="form_section_title">Authors</a>
-					<div id="form_authors" class="form_content collapse flex">
+				<div class="form_all flex column">
+					<div class="form_section flex column">
+						<div class="form_section_title flex spaceBetween">
+							<a href="#" class="">Title</a>
+							<div class="arrowWrap">
+								<svg viewBox="0 0 33 22" width="12" height="9">
+									<path fill="#444444" id="arrow" d="M0,16.083L16,0l16,16.083L27.083,22L16,11L6,22L0,16.083z"/>
+								</svg>
+							</div>
+						</div>
+						<div id="form_title" class="form_content collapse flex">
+						</div>
 					</div>
-				</div>
-
-				<div class="form_section flex column">
-					<a href="#" class="form_section_title">Description</a>
-					<div id="form_description" class="form_content collapse flex">
+					
+					<div class="form_section flex column">
+						<div class="form_section_title flex spaceBetween">
+							<a href="#" class="">Authors</a>
+							<div class="arrowWrap">
+								<svg viewBox="0 0 33 22" width="12" height="9">
+									<path fill="#444444" id="arrow" d="M0,16.083L16,0l16,16.083L27.083,22L16,11L6,22L0,16.083z"/>
+								</svg>
+							</div>
+						</div>
+						<div id="form_authors" class="form_content collapse flex">
+						</div>
 					</div>
-				</div>
 
-				<div class="form_section flex column">
-					<a href="#" class="form_section_title">Domain</a>
-					<div id="form_domain" class="form_content collapse flex">
+					<div class="form_section flex column">
+						<div class="form_section_title flex spaceBetween">
+							<a href="#" class="">Description</a>
+							<div class="arrowWrap">
+								<svg viewBox="0 0 33 22" width="12" height="9">
+									<path fill="#444444" id="arrow" d="M0,16.083L16,0l16,16.083L27.083,22L16,11L6,22L0,16.083z"/>
+								</svg>
+							</div>
+						</div>
+						<div id="form_description" class="form_content collapse flex">
+						</div>
 					</div>
-				</div>
 
-				<div class="form_section flex column">
-					<a href="#" class="form_section_title">Stakeholders and Interests</a>
-					<div id="form_stakeholders" class="form_content collapse flex">
+					<div class="form_section flex column">
+						<div class="form_section_title flex spaceBetween">
+							<a href="#" class="">Domain</a>
+							<div class="arrowWrap">
+								<svg viewBox="0 0 33 22" width="12" height="9">
+									<path fill="#444444" id="arrow" d="M0,16.083L16,0l16,16.083L27.083,22L16,11L6,22L0,16.083z"/>
+								</svg>
+							</div>
+						</div>
+						<div id="form_domain" class="form_content collapse flex">
+						</div>
 					</div>
-				</div>
 
-				<div class="form_section flex column">
-					<a href="#" class="form_section_title">Actors and Objectives</a>
-					<div id="form_actors" class="form_content collapse flex">
+					<div class="form_section flex column">
+						<div class="form_section_title flex spaceBetween">
+							<a href="#" class="">Stakeholders and Interests</a>
+							<div class="arrowWrap">
+								<svg viewBox="0 0 33 22" width="12" height="9">
+									<path fill="#444444" id="arrow" d="M0,16.083L16,0l16,16.083L27.083,22L16,11L6,22L0,16.083z"/>
+								</svg>
+							</div>
+						</div>
+						<div id="form_stakeholders" class="form_content collapse flex">
+						</div>
 					</div>
-				</div>
 
-				<div class="form_section flex column">
-					<a href="#" class="form_section_title">Usecases</a>
-					<div id="form_usecases" class="form_content collapse flex">
+					<div class="form_section flex column">
+						<div class="form_section_title flex spaceBetween">
+							<a href="#" class="">Actors and Objectives</a>
+							<div class="arrowWrap">
+								<svg viewBox="0 0 33 22" width="12" height="9">
+									<path fill="#444444" id="arrow" d="M0,16.083L16,0l16,16.083L27.083,22L16,11L6,22L0,16.083z"/>
+								</svg>
+							</div>
+						</div>
+						<div id="form_actors" class="form_content collapse flex">
+						</div>
 					</div>
-				</div>
 
+					<div class="form_section flex column">
+						<div class="form_section_title flex spaceBetween">
+							<a href="#" class="">Usecases</a>
+							<div class="arrowWrap">
+								<svg viewBox="0 0 33 22" width="12" height="9">
+									<path fill="#444444" id="arrow" d="M0,16.083L16,0l16,16.083L27.083,22L16,11L6,22L0,16.083z"/>
+								</svg>
+							</div>
+						</div>
+						<div id="form_usecases" class="form_content collapse flex">
+						</div>
+					</div>
+					
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
-
-<!-- adaugare HTML prin script javascript/jquery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="assets/js/form_parts.js"></script>
-<script src="assets/js/expand.js"></script>
-	
+	<!-- adaugare HTML prin script javascript/jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="assets/js/form_parts.js"></script>
+	<script src="assets/js/expand.js"></script>
 	<script src="assets/js/form_parts_js/title.js"></script>
 	<script src="assets/js/form_parts_js/authors.js"></script>
 	<script src="assets/js/form_parts_js/description.js"></script>
@@ -86,7 +128,5 @@
 	<script src="assets/js/form_parts_js/stakeholders_and_interests.js"></script>
 	<script src="assets/js/form_parts_js/actors_and_objectives.js"></script>
 	<script src="assets/js/form_parts_js/usecases.js"></script>
-
 </body>
 </html>
-
