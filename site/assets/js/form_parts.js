@@ -3,7 +3,7 @@ $(document).ready(function() {
 
 	$("#form_title").load("form_parts/title.html");
 
-	$("#form_authors").load("form_parts/authors.html");
+	$("#form_authors").load("form_parts/authors.html", function(){ authorBussiness(); });
 
 	$("#form_description").load("form_parts/description.html");
 
