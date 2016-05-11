@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $("#form_authors").load("form_parts/authors.html", function(){ $("#authors_list").dynamiclist() });
+    $("#formAuthors").load("form_parts/authors.html", function(){ $("#authors_list").dynamiclist() });
 	
     //aici bagati codul
 })(jQuery);

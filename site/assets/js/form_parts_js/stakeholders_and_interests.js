@@ -1,7 +1,7 @@
 (function($) {
 $(document).ready(function() {
 
-	$("#form_stakeholders").load("form_parts/stakeholders_interests.html", function(){
+	$("#formStakeholders").load("form_parts/stakeholders_interests.html", function(){
 		// stakeholderPopulate();
 		$("#stakeholders_list").dynamiclist();
 	    	//bagati codul aici

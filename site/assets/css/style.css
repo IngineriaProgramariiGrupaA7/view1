@@ -153,35 +153,35 @@ h1 {
 	margin: 10px 0 20px 0;
 }
 
-.create_btn {
+.createBtn {
 	background-color: #3EC46D;
 }
 
-.open_btn {
+.openBtn {
 	background-color: #3EC4B5;
 }
 
-.create_btn:hover {
+.createBtn:hover {
 	background-color: white;
 	color: #3EC46D;
 }
 
-.open_btn:hover {
+.openBtn:hover {
 	background-color: white;
 	color: #3EC4B5;
 }
 
-.form_all {
+.formAll {
 	padding: 0;
 	height: auto;
 	width: 100%;
 }
 
-.form_section {
+.formSection {
 	width: 100%;	/*background-color: grey;*/
 }
 
-.form_section_title {
+.formSectionTitle {
 	text-align: left;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
@@ -202,7 +202,7 @@ svg {
 	fill: #444444;
 } 
 
-.form_section_title:hover {
+.formSectionTitle:hover {
 	background-color: #3EC4B5;
 	color: white;
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 0 2px 7px 0 rgba(0, 0, 0, 0.1);
@@ -211,15 +211,15 @@ svg {
 	cursor: pointer;
 }
 
-.form_section_title:hover a {
+.formSectionTitle:hover a {
 	color: white;
 }
 
-.form_section_title:hover .arrowWrap svg path {
+.formSectionTitle:hover .arrowWrap svg path {
 	fill: white;
 }
 
-.section_selected {
+.sectionSelected {
 	background-color: #3EC4B5;
 	color: white;
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 0 2px 7px 0 rgba(0, 0, 0, 0.1);
@@ -227,21 +227,21 @@ svg {
 	opacity: 0.9;
 }
 
-.section_selected a {
+.sectionSelected a {
 	color: white;
 }
 
-.section_selected .arrowWrap svg {
+.sectionSelected .arrowWrap svg {
 	-ms-transform: rotate(180deg);
 	-webkit-transform: rotate(180deg);
 	transform: rotate(180deg);
 }
 
-.section_selected .arrowWrap svg path {
+.sectionSelected .arrowWrap svg path {
 	fill: white;
 }
 
-.form_content {
+.formContent {
 	background-color: #F5F5F5;
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
@@ -253,35 +253,8 @@ svg {
 	overflow: hidden;
 }
 
-.buttons {
+.formButtons {
 	color: #444;
 	margin-top: 20px;
 }
-
-/*
-.form_content .table {
-	display: table;
-}
-
-.form_content .row {
-	display: table-row;
-}
-
-.form_content .row  label{
-	display: table-cell;
-	font-weight: bold;
-}
-
-.form_content .row  .buttons{
-	display: table-cell;
-}
-
-.form_content .row  .buttons a{
-	line-height: 32px;
-	color: #000;
-	background-color: #fff;
-	text-transform: uppercase;
-	font-size:11px;
-	padding: 6px 8px;
-}*/
 
