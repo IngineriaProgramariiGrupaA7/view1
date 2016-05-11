@@ -1,3 +1,9 @@
+$(document).ready(function() {
+
+    $("#form_authors").load("form_parts/authors.html", function(){ authorBussiness(); });
+    //aici bagati codul
+});
+
 function addFields(){
 
             var container = document.getElementById("container");
