@@ -102,6 +102,7 @@ body {
 	text-align: center;
 	margin: auto;
 }*/
+
 .row {
 	flex-flow: row wrap; /*^ una langa alta alta*/
 }
@@ -122,13 +123,11 @@ body {
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 2px 2px 7px 0 rgba(0, 0, 0, 0.1);
 }
 
-.buttons {
+.buttons button{
+	border: 0;
 	font-family: 'Roboto', sans-serif;
 	color: white;
 	font-weight: 500;
-}
-
-.buttons a {
 	padding: 7px 20px;
 	margin: 0 5px;
 	border-radius: 2px;
@@ -137,9 +136,37 @@ body {
 	color: white;
 }
 
-.buttons a:active {
+.buttons button:active {
 	background-color: #E6E6E6;
 }
+
+.greenBtn {
+	background-color: #3EC46D;
+}
+
+.blueBtn {
+	background-color: #3EC4B5;
+}
+
+.pinkBtn {
+	background-color: #DF739E;
+}
+
+.greenBtn:hover {
+	background-color: white;
+	color: #3EC46D;
+}
+
+.blueBtn:hover {
+	background-color: white;
+	color: #3EC4B5;
+}
+
+.pinkBtn:hover {
+	background-color: white;
+	color: #DF739E;
+}
+
 
 h1 {
 	font-family: 'Roboto', sans-serif;
@@ -153,23 +180,6 @@ h1 {
 	margin: 10px 0 20px 0;
 }
 
-.createBtn {
-	background-color: #3EC46D;
-}
-
-.openBtn {
-	background-color: #3EC4B5;
-}
-
-.createBtn:hover {
-	background-color: white;
-	color: #3EC46D;
-}
-
-.openBtn:hover {
-	background-color: white;
-	color: #3EC4B5;
-}
 
 .formAll {
 	padding: 0;
