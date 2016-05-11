@@ -1,10 +1,11 @@
 $(document).ready(function() {
 
-    $("#form_authors").load("form_parts/authors.html", function(){ authorBussiness(); });
+    $("#form_authors").load("form_parts/authors.html", function(){ $("#authors_list").dynamiclist() });
+	
     //aici bagati codul
-});
+})(jQuery);
 
-function addFields(){
+/*function addFields(){
 
             var container = document.getElementById("container");
                 var input = document.createElement("input");
@@ -50,3 +51,4 @@ function addFields(){
                     rowContainer.appendChild(buttonAdd);
                     container.appendChild(rowContainer);
         }
+*/
