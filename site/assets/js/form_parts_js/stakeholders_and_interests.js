@@ -3,7 +3,7 @@ $(document).ready(function() {
 
 	$("#formStakeholders").load("form_parts/stakeholders_interests.html", function(){
 		// stakeholderPopulate();
-		$("#stakeholders_list").dynamiclist();
+		$("#StakeholdersList").dynamiclist();
 	    	//bagati codul aici
 	    });
 	});
