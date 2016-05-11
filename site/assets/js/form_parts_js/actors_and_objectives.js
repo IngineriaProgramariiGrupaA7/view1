@@ -1,8 +1,10 @@
-$(document).ready(function() {
 
-	$("#form_actors").load("form_parts/actors_objectives.html", function(){
+(function($) {
+    $(document).ready(function() {
 
-	    	//bagati codul aici
+	    $("#form_actors").load("form_parts/actors_objectives.html", function(){
+			$("#actors_list").dynamiclist();
 	    });
-
-});
+		
+    });
+})(jQuery);
