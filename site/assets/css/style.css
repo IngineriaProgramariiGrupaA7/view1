@@ -56,6 +56,19 @@ body {
 	justify-content: center;
 }
 
+.flexEnd {
+	-webkit-box-align: flex-end;
+	-webkit-align-items: flex-end;
+	-moz-box-align: flex-end;
+	-ms-flex-align: flex-end;
+	align-items: flex-end;
+	-webkit-box-pack: flex-end;
+	-webkit-justify-content: flex-end;
+	-moz-box-pack: flex-end;
+	-ms-flex-pack: flex-end;
+	justify-content: flex-end;
+}
+
 .spaceBetween {
 	-webkit-box-align: space-between;
 	-webkit-align-items: space-between;
@@ -107,13 +120,11 @@ body {
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 2px 2px 7px 0 rgba(0, 0, 0, 0.1);
 }
 
-.buttons {
+.buttons button {
+	border: 0;
 	font-family: 'Roboto', sans-serif;
 	color: white;
 	font-weight: 500;
-}
-
-.buttons a {
 	padding: 7px 20px;
 	margin: 0 5px;
 	border-radius: 2px;
@@ -122,8 +133,73 @@ body {
 	color: white;
 }
 
-.buttons a:active {
+.buttons button:active {
 	background-color: #E6E6E6;
+}
+
+.greenBtn {
+	background-color: #3EC46D;
+}
+
+.blueBtn {
+	background-color: #3EC4B5;
+}
+
+.pinkBtn {
+	background-color: #DF739E;
+}
+
+.greenBtn:hover {
+	background-color: white;
+	color: #3EC46D;
+}
+
+.blueBtn:hover {
+	background-color: white;
+	color: #3EC4B5;
+}
+
+.pinkBtn:hover {
+	background-color: white;
+	color: #DF739E;
+}
+
+form {
+	flex: 1;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+	width: auto;
+	box-sizing: border-box;
+	font-family: 'Roboto Condensed', sans-serif;
+	background: #F5F5F5;
+	color: #444444;
+	font-size: 17px;
+	width: 100%;
+	padding: 5px 0;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 2px #BBBBBB solid;
+	outline: 0;
+	margin-bottom: 5px;
+}
+
+textarea {
+	border: 2px #BBBBBB solid;
+	padding: 5px 7px;
+	resize: vertical;
+}
+
+form *:focus {
+	border-bottom: 2px #3EC4B5 solid;
+}
+
+form textarea:focus {
+	border: 2px #3EC4B5 solid;
 }
 
 h1 {
@@ -138,35 +214,17 @@ h1 {
 	margin: 10px 0 20px 0;
 }
 
-.create_btn {
-	background-color: #3EC46D;
-}
-
-.open_btn {
-	background-color: #3EC4B5;
-}
-
-.create_btn:hover {
-	background-color: white;
-	color: #3EC46D;
-}
-
-.open_btn:hover {
-	background-color: white;
-	color: #3EC4B5;
-}
-
-.form_all {
+.formAll {
 	padding: 0;
 	height: auto;
 	width: 100%;
 }
 
-.form_section {
+.formSection {
 	width: 100%;	/*background-color: grey;*/
 }
 
-.form_section_title {
+.formSectionTitle {
 	text-align: left;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
@@ -185,9 +243,9 @@ svg {
 	height: 100%;
 	opacity: 0.9;
 	fill: #444444;
-} 
+}
 
-.form_section_title:hover {
+.formSectionTitle:hover {
 	background-color: #3EC4B5;
 	color: white;
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 0 2px 7px 0 rgba(0, 0, 0, 0.1);
@@ -196,15 +254,15 @@ svg {
 	cursor: pointer;
 }
 
-.form_section_title:hover a {
+.formSectionTitle:hover a {
 	color: white;
 }
 
-.form_section_title:hover .arrowWrap svg path {
+.formSectionTitle:hover .arrowWrap svg path {
 	fill: white;
 }
 
-.section_selected {
+.sectionSelected {
 	background-color: #3EC4B5;
 	color: white;
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 0 2px 7px 0 rgba(0, 0, 0, 0.1);
@@ -212,21 +270,21 @@ svg {
 	opacity: 0.9;
 }
 
-.section_selected a {
+.sectionSelected a {
 	color: white;
 }
 
-.section_selected .arrowWrap svg {
+.sectionSelected .arrowWrap svg {
 	-ms-transform: rotate(180deg);
 	-webkit-transform: rotate(180deg);
 	transform: rotate(180deg);
 }
 
-.section_selected .arrowWrap svg path {
+.sectionSelected .arrowWrap svg path {
 	fill: white;
 }
 
-.form_content {
+.formContent {
 	background-color: #F5F5F5;
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
@@ -237,29 +295,8 @@ svg {
 	padding: 0 15px;
 	overflow: hidden;
 }
-/*
-.form_content .table {
-	display: table;
-}
 
-.form_content .row {
-	display: table-row;
+.formButtons {
+	color: #444;
+	margin-top: 20px;
 }
-
-.form_content .row  label{
-	display: table-cell;
-	font-weight: bold;
-}
-
-.form_content .row  .buttons{
-	display: table-cell;
-}
-
-.form_content .row  .buttons a{
-	line-height: 32px;
-	color: #000;
-	background-color: #fff;
-	text-transform: uppercase;
-	font-size:11px;
-	padding: 6px 8px;
-}*/

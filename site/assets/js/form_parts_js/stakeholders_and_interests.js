@@ -1,14 +1,16 @@
 (function($) {
 $(document).ready(function() {
 
-	$("#form_stakeholders").load("form_parts/stakeholders_interests.html", function(){
+	$("#formStakeholders").load("form_parts/stakeholders_interests.html", function(){
 		// stakeholderPopulate();
-		$("#stakeholders_list").dynamiclist();
+		$("#StakeholdersList").dynamiclist();
 	    	//bagati codul aici
 	    });
 	});
 })(jQuery);
 
+
+//Alex's stuff
 // function stakeholderPopulate(){
 	// var container = document.getElementById("stakeholders_list");
 	// var buttonAdd = document.createElement("button");
