@@ -56,12 +56,27 @@ body {
 	justify-content: center;
 }
 
+.flexEnd { 
+	-webkit-box-align: flex-end;
+	-webkit-align-items: flex-end;
+	-moz-box-align: flex-end;
+	-ms-flex-align: flex-end;
+	align-items: flex-end;
+	-webkit-box-pack: flex-end;
+	-webkit-justify-content: flex-end;
+	-moz-box-pack: flex-end;
+	-ms-flex-pack: flex-end;
+	justify-content: flex-end;
+}
+
+
 .spaceBetween {
 	-webkit-box-align: space-between;
 	-webkit-align-items: space-between;
 	-moz-box-align: space-between;
 	-ms-flex-align: space-between;
 	align-items: space-between;
+
 	-webkit-box-pack: space-between;
 	-webkit-justify-content: space-between;
 	-moz-box-pack: space-between;
@@ -237,6 +252,12 @@ svg {
 	padding: 0 15px;
 	overflow: hidden;
 }
+
+.buttons {
+	color: #444;
+	margin-top: 20px;
+}
+
 /*
 .form_content .table {
 	display: table;
@@ -263,3 +284,4 @@ svg {
 	font-size:11px;
 	padding: 6px 8px;
 }*/
+
