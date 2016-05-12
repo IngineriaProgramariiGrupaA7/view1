@@ -4,8 +4,8 @@ $(document).ready(function() {
 	
     //aici bagati codul
 })(jQuery);
-
-/*function addFields(){
+/*
+function addFields(){
 
             var container = document.getElementById("container");
                 var input = document.createElement("input");
@@ -51,4 +51,4 @@ $(document).ready(function() {
                     rowContainer.appendChild(buttonAdd);
                     container.appendChild(rowContainer);
         }
-*/
+        */

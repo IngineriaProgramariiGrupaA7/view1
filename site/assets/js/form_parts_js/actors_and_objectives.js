@@ -2,13 +2,15 @@
 (function($) {
     $(document).ready(function() {
 
-	    $("#form_actors").load("form_parts/actors_objectives.html", function(){
-			$("#actors_list").dynamiclist();
-	    });
-	     /*$("#form_actors").load("form_parts/actors_objectives.html", function ()
+	    $("#form_actors").load("form_parts/actors_objectives.html", function() {authorBussiness()});
+	      
+    });
+
+})(jQuery);
+function actorsBussiness()
 			{
 			        // Get the modal
-			    var modal = document.getElementById('myModal');
+			    var modal = document.getElementById('openModal');
 
 			    // Get the button that opens the modal
 			    var btn = document.getElementById("myBtn");
@@ -32,7 +34,58 @@
 			            modal.style.display = "none";
 			        }
 			    }
-			});*/
-    });
+			}
+			function addFields(){
 
-})(jQuery);
+            var container = document.getElementById("container");
+                var label = document.createElement("label");
+                var textInput = document.createTextNode("Untitled");
+                label.appendChild(textInput);
+                var button = document.createElement("button");
+                button.name="buttonRemove";
+                var t = document.createTextNode("REMOVE");
+                button.appendChild(t);
+
+                button.addEventListener("click", removeRow, false);
+
+                var edit = document.createElement("button");
+                edit.name ="editButton";
+                var valueEdit = document.createTextNode("EDIT");
+                edit.appendChild(valueEdit);
+                edit.id="myBtn";
+
+                edit.addEventListener("click", actorsBussiness, false);
+
+                var rowContainer = document.createElement('p');
+
+                rowContainer.appendChild(label);
+                rowContainer.appendChild(button);
+                rowContainer.appendChild(edit);
+                var lastOne= container.lastChild;
+                if(container.hasChildNodes()) 
+                {
+                    container.removeChild(container.lastChild);
+                }
+                container.appendChild(rowContainer);
+                container.appendChild(lastOne);
+            
+                    
+        }
+
+        function removeRow() {
+            this.parentNode.parentNode.removeChild(this.parentNode);
+            
+            return false;
+        }
+        function authorBussiness()
+        {
+            var container = document.getElementById("container");
+            var buttonAdd = document.createElement("button");
+                    buttonAdd.name="buttonAdd";
+                    var t = document.createTextNode("ADD");
+                    buttonAdd.appendChild(t);
+                    buttonAdd.addEventListener("click", addFields, false);
+                    var rowContainer = document.createElement('p');
+                    rowContainer.appendChild(buttonAdd);
+                    container.appendChild(rowContainer);
+        }
