@@ -5,14 +5,10 @@
         <button class="list-edit btn leftMargin">Edit</button>
         <div class="usecase_edit_view popup flex containerPopup scroll">
             <!--INCEPE POPUP-->
-            <div class="flex column main center">
+            <div class="flex column mainPopup center">
                 <form onsubmit="return false;" >
-                    <h1 class="title">Sheet Editor</h1>
-                    <p class="description">
-                        Complete the form to generate diagrams.
-                    </p>
-    
-                    <!-- 
+   
+                    
                     <input type="text" name="use_case_title" id="use_case_title_id" placeholder="Use-case title"/><br>
                     <textarea type="text" name="objective_field" rows="4" cols="50" placeholder="Objective/Context"/><br>
                     <p>Actor
@@ -50,14 +46,17 @@
                             <button class="list-add-2 btn"> Add</button>
                         </div>
                     </p>
-                    -->
-                    <button class="close">Cancel</button>
-                    <button class="close">Save</button>
-                    
                 </form>
+
+                <div class="formAll flex column">
+                    <div class="formButtons flex spaceBetween buttons">
+                        <button id="cancelBtn" class="pinkBtn close">cancel</button>
+                        <button id="saveBtn" class="greenBtn close">save</button>
+                    </div>
+                </div>
             </div>
+            <!--v TERMINA POPUP-->
         </div>
-        <!--TERMINA POPUP-->
     </div>
-    <button class="list-add btn"> Add</button>
+    <button class="list-add btn">Add</button>
 </div>
