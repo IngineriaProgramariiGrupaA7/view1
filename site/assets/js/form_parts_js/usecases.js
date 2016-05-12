@@ -2,7 +2,8 @@
 (function($) {
     $(document).ready(function() {
 
-	    $("#form_usecases").load("form_parts/usecases.html", function(){
+	    $("#formUsecases").load("form_parts/usecases.html", function(){
+	    	$(".usecase_edit_view").makePopup("#usecase_list .list-edit");
 			$("#usecase_list").dynamiclist();
 	    });
 		

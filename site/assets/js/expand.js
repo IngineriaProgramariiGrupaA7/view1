@@ -1,11 +1,11 @@
 $(document).ready(function() {
 
-    $(".form_section_title").click(function() {
-        $(this).toggleClass("section_selected");
+    $(".formSectionTitle").click(function() {
+        $(this).toggleClass("sectionSelected");
 
-        var el = $(this).parent().children(".form_content");
+        var el = $(this).parent().children(".formContent");
 
-        if ($(this).parent().children(".form_content").hasClass("collapse")) {
+        if ($(this).parent().children(".formContent").hasClass("collapse")) {
             el.animate({
                 'padding-top': '15px',
                 'padding-right': '15px',

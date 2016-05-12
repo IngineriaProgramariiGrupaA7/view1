@@ -112,21 +112,25 @@
 				<!-- ^ asta e dreptunghiu
 				care contine chestii unele sub altele-->
 
-				<div class="form_all flex column">
-					<div class="buttons flex flexEnd">
-						<button>PREVIEW</button>
-					</div>
-				</div>
 
 				<h1 class="title">Sheet Editor</h1>
 				<p class="description">
 					Complete the form to generate diagrams.
 				</p>
+				
+
+								<div class="formAll flex column">
+					<div class="formButtons flex spaceBetween buttons">
+						<button onclick="location.href='index.html'" id="backBtn" class="blueBtn">go back</button>
+						<button onclick="location.href='preview.html'" id="previewBtn" class="blueBtn">PREVIEW</button>
+					</div>
+				</div>
+
 				<hr/>
 				
-				<div class="form_all flex column">
-					<div class="form_section flex column">
-						<div class="form_section_title flex spaceBetween">
+				<div class="formAll flex column">
+					<div class="formSection flex column">
+						<div class="formSectionTitle flex spaceBetween">
 							<a href="#" class="">Title</a>
 							<div class="arrowWrap">
 								<svg viewBox="0 0 33 22" width="12" height="9">
@@ -134,12 +138,12 @@
 								</svg>
 							</div>
 						</div>
-						<div id="form_title" class="form_content collapse flex">
+						<div id="formTitle" class="formContent collapse flex">
 						</div>
 					</div>
 					
-					<div class="form_section flex column">
-						<div class="form_section_title flex spaceBetween">
+					<div class="formSection flex column">
+						<div class="formSectionTitle flex spaceBetween">
 							<a href="#" class="">Authors</a>
 							<div class="arrowWrap">
 								<svg viewBox="0 0 33 22" width="12" height="9">
@@ -147,12 +151,12 @@
 								</svg>
 							</div>
 						</div>
-						<div id="form_authors" class="form_content collapse flex">
+						<div id="formAuthors" class="formContent collapse flex">
 						</div>
 					</div>
 
-					<div class="form_section flex column">
-						<div class="form_section_title flex spaceBetween">
+					<div class="formSection flex column">
+						<div class="formSectionTitle flex spaceBetween">
 							<a href="#" class="">Description</a>
 							<div class="arrowWrap">
 								<svg viewBox="0 0 33 22" width="12" height="9">
@@ -160,12 +164,12 @@
 								</svg>
 							</div>
 						</div>
-						<div id="form_description" class="form_content collapse flex">
+						<div id="formDescription" class="formContent collapse flex">
 						</div>
 					</div>
 
-					<div class="form_section flex column">
-						<div class="form_section_title flex spaceBetween">
+					<div class="formSection flex column">
+						<div class="formSectionTitle flex spaceBetween">
 							<a href="#" class="">Domain</a>
 							<div class="arrowWrap">
 								<svg viewBox="0 0 33 22" width="12" height="9">
@@ -173,12 +177,12 @@
 								</svg>
 							</div>
 						</div>
-						<div id="form_domain" class="form_content collapse flex">
+						<div id="formDomain" class="formContent collapse flex">
 						</div>
 					</div>
 
-					<div class="form_section flex column">
-						<div class="form_section_title flex spaceBetween">
+					<div class="formSection flex column">
+						<div class="formSectionTitle flex spaceBetween">
 							<a href="#" class="">Stakeholders and Interests</a>
 							<div class="arrowWrap">
 								<svg viewBox="0 0 33 22" width="12" height="9">
@@ -186,12 +190,12 @@
 								</svg>
 							</div>
 						</div>
-						<div id="form_stakeholders" class="form_content collapse flex">
+						<div id="formStakeholders" class="formContent collapse flex">
 						</div>
 					</div>
 
-					<div class="form_section flex column">
-						<div class="form_section_title flex spaceBetween">
+					<div class="formSection flex column">
+						<div class="formSectionTitle flex spaceBetween">
 							<a href="#" class="">Actors and Objectives</a>
 							<div class="arrowWrap">
 								<svg viewBox="0 0 33 22" width="12" height="9">
@@ -199,12 +203,12 @@
 								</svg>
 							</div>
 						</div>
-						<div id="form_actors" class="form_content collapse flex">
+						<div id="formActors" class="formContent collapse flex">
 						</div>
 					</div>
 
-					<div class="form_section flex column">
-						<div class="form_section_title flex spaceBetween">
+					<div class="formSection flex column">
+						<div class="formSectionTitle flex spaceBetween">
 							<a href="#" class="">Usecases</a>
 							<div class="arrowWrap">
 								<svg viewBox="0 0 33 22" width="12" height="9">
@@ -212,17 +216,20 @@
 								</svg>
 							</div>
 						</div>
-						<div id="form_usecases" class="form_content collapse flex">
+						<div id="formUsecases" class="formContent collapse flex">
 						</div>
 					</div>
 				</div>
+				
 
-				<div class="form_all flex column">
-					<div class="buttons flex spaceBetween">
-						<button>RESET</button>
-						<div class="buttons2 flex row">
-							<button>SAVE DRAFT</button>
-							<button>SUBMIT</button>
+				<hr>
+				
+				<div class="formAll flex column">
+					<div class="formButtons flex spaceBetween buttons">
+						<button id="resetBtn" class="pinkBtn">RESET</button>
+						<div class="formButtons2 flex row">
+							<button id="saveDraftBtn" class="greenBtn">SAVE DRAFT</button>
+							<button onclick="location.href='finish.html'" id="submitBtn" class="blueBtn">SUBMIT</button>
 						</div>
 					</div>
 				</div>
@@ -232,8 +239,9 @@
 	</div>
 	<!-- adaugare HTML prin script javascript/jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script src="assets/js/jquery.dynamiclist.min.js"></script>
+	<script src="assets/js/jquery.dynamiclist.js"></script>
 	<script src="assets/js/expand.js"></script>
+	<script src="assets/js/popup.js"></script>
 	<script src="assets/js/form_parts_js/title.js"></script>
 	<script src="assets/js/form_parts_js/authors.js"></script>
 	<script src="assets/js/form_parts_js/description.js"></script>
