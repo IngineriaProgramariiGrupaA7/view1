@@ -127,7 +127,7 @@ body {
 	color: white;
 	font-weight: 500;
 	padding: 7px 20px;
-	margin: 0 5px;
+	margin: 5px;
 	border-radius: 2px;
 	font-size: 15px;
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 2px 2px 5px 0 rgba(0, 0, 0, 0.1);
@@ -177,7 +177,7 @@ select {
 	box-sizing: border-box;
 	font-family: 'Roboto Condensed', sans-serif;
 	background: #F5F5F5;
-	color: #444444;
+	color: #777777;
 	font-size: 17px;
 	width: 100%;
 	padding: 5px 0;
@@ -197,10 +197,12 @@ textarea {
 
 form *:focus {
 	border-bottom: 2px #3EC4B5 solid;
+	color: #444444;
 }
 
 form textarea:focus {
 	border: 2px #3EC4B5 solid;
+	color: #444444;
 }
 
 h1 {
@@ -209,10 +211,13 @@ h1 {
 	font-weight: 300;
 }
 
+.checkMark:after {
+	content: '\2713';
+}
+
 .description {
 	font-size: 18px;
 	padding: 0;
-	margin: 10px 0 20px 0;
 }
 
 .formAll {
