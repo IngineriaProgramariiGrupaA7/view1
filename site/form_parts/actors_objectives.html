@@ -6,13 +6,13 @@
         <div class="actors_edit_view popup flex containerPopup scroll">
             <!--INCEPE POPUP-->
             <div class="flex column mainPopup center">
-                <form onsubmit="return false;" >
+                <form onsubmit="return false;" class="frmActorsObjectives">
                     
 
-                    <input type="text" name="actor_name" id="use_case_title_id" placeholder="Actor name"/><br>
-                    <textarea type="text" name="objectives" rows="4" cols="50" placeholder="Objectives"/></br>
+                    <input type="text" name="actor_name" class="actor_name" placeholder="Actor name"/><br>
+                    <textarea type="text" name="objectives" class="objectives" rows="4" cols="50" placeholder="Objectives"/></br>
                     <p>Inherits
-                        <select>
+                        <select class="inherits">
                             <option value="one">Actor1</option>
                             <option value="two">Actor2</option>
                             <option value="three">Actor3</option>
@@ -23,7 +23,7 @@
                  <div class="formAll flex column">
                     <div class="formButtons flex spaceBetween buttons">
                         <button id="cancelBtn" class="pinkBtn close">cancel</button>
-                        <button id="saveBtn" class="greenBtn close">save</button>
+                        <button class="greenBtn saveBtnAO">save</button>
                     </div>
                 </div>
             </div>
