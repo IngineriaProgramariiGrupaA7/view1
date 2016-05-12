@@ -32,6 +32,9 @@
                 var popup = $(".list-item:last .popup"),
                     btn = $(".list-item:last .list-edit");
                 $(popup).makePopup(btn);
+
+                $(".steps_list:last").dynamiclist_level2();
+                $(".extensions_list:last").dynamiclist_level2();
             },
             removeCallbackFn: null
         }, options);
