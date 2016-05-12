@@ -139,6 +139,7 @@ body {
 }
 
 .mainPopup {
+	flex-basis: 600px;
 	margin: auto;
 	padding: 40px;
 	background-color: #F5F5F5;
@@ -147,6 +148,7 @@ body {
 }
 
 .buttons button {
+	cursor: pointer;
 	border: 0;
 	font-family: 'Roboto', sans-serif;
 	text-transform: uppercase; 
@@ -192,7 +194,12 @@ body {
 
 form {
 	flex: 1;
+	width: 100%;
 	font-family: 'Roboto', sans-serif;
+}
+
+*:focus {
+    outline: none;
 }
 
 input[name="authorField"] {
@@ -216,13 +223,29 @@ textarea{
 	margin-bottom: 5px;
 }
 
+select {
+	box-sizing: border-box;
+	font-family: 'Roboto Condensed', sans-serif;
+	background: #F5F5F5;
+	color: #777777;
+	font-size: 17px;
+	/*width: 100%;*/
+	padding: 5px 0;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 2px #BBBBBB solid;
+	outline: 0;
+	margin-bottom: 5px;
+}
+
 textarea {
 	border: 2px #BBBBBB solid;
 	padding: 5px 7px;
 	resize: vertical;
 }
 
-form input[type="text"]:focus{
+form input[type="text"]:focus, form select:focus{
 	border-bottom: 2px #3EC4B5 solid;
 	color: #444444;
 }
@@ -334,6 +357,8 @@ svg {
 }
 
 .btn{
+	background-color: white;
+	cursor: pointer;
 	flex: 0;
 	color: #444;
 	border: 0;
