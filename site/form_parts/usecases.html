@@ -8,10 +8,51 @@
         <button class="list-remove btn"> Remove</button>
         <button class="list-edit btn"> Edit</button>
 
-        <div class="usecase_edit_view hidden popup" >
-        	<p style="background-color: gray" class="close">This is the full-screen "popup" thing that you should not see.
-        	"Edit" should show this thing</p>
+        <div class="usecase_edit_view hidden popup"  style="background-color: red; padding: 10px">
+
+            <form onsubmit="return false;">
+                <input type="text" name="use_case_title" id="use_case_title_id" placeholder="Use-case title"></input><br>
+                <textarea type="text" name="objective_field" rows="4" cols="50" placeholder="Objective/Context"></textarea><br>
+                <p>Actor
+                    <select>
+                        <option value="one">One</option>
+                        <option value="two">Two</option>
+                        <option value="three">Three</option>
+                        <option value="four">Four</option>
+                    </select>
+                </p>
+                <p>Steps
+                    <div id="steps_list">
+                        <div class="list-item-2">
+                            <input type="text" name="step_title" id="step_title_id" placeholder="Step title"></input>
+                            <button class="list-remove-2 btn"> Remove</button>
+                            <button class="list-edit-2 btn"> Add description</button>
+                        </div>
+                        <button class="list-add-2 btn"> Add</button>
+                    </div>
+                </p>
+                <p>Extensions</p>
+                <p>
+                    <div id="extensions_list">
+                        <div class="list-item-2">
+                            <select>
+                                <option value="none">Step title</option>
+                                <option value="two">Two</option>
+                                <option value="three">Three</option>
+                                <option value="four">Four</option>
+                            </select>
+                            <input type="text" name="step_title" id="step_title_id" placeholder="Extension title"></input>
+                            <button class="list-remove-2 btn"> Remove</button>
+                            <button class="list-edit-2 btn"> Add description</button>
+                        </div>
+                        <button class="list-add-2 btn"> Add</button>
+                    </div>
+                </p>
+            </form>
+            <button class="close">Cancel</button>
+            <button class="close">Save</button>
         </div>
+
 
     </div>
     <button class="list-add btn"> Add</button>
