@@ -1,18 +1,13 @@
-
-
-            
 <div id="usecase_list">
     <div class="list-item">
-
-    	<span class="usecase_name">Untitled</span>
-        <button class="list-remove btn leftMargin"> Remove</button>
-        <button class="list-edit btn leftMargin"> Edit</button>
-
-        <div class="usecase_edit_view hidden popup"  style="background-color: red; padding: 10px">
-
-            <form onsubmit="return false;">
-                <input type="text" name="use_case_title" id="use_case_title_id" placeholder="Use-case title"></input><br>
-                <textarea type="text" name="objective_field" rows="4" cols="50" placeholder="Objective/Context"></textarea><br>
+        <span class="usecase_name">Untitled</span>
+        <button class="list-remove btn leftMargin">Remove</button>
+        <button class="list-edit btn leftMargin">Edit</button>
+        <div class="usecase_edit_view hidden popup flex container scroll">
+            <!--INCEPE POPUP-->
+            <form onsubmit="return false;" class="flex column main flexBasis center">
+                <input type="text" name="use_case_title" id="use_case_title_id" placeholder="Use-case title"/><br>
+                <textarea type="text" name="objective_field" rows="4" cols="50" placeholder="Objective/Context"/><br>
                 <p>Actor
                     <select>
                         <option value="one">One</option>
@@ -24,7 +19,7 @@
                 <p>Steps
                     <div class="steps_list">
                         <div class="list-item-2">
-                            <input type="text" name="step_title" id="step_title_id" placeholder="Step title"></input>
+                            <input type="text" name="step_title" id="step_title_id" placeholder="Step title">
                             <button class="list-remove-2 btn"> Remove</button>
                             <button class="list-edit-2 btn"> Add description</button>
                         </div>
@@ -41,7 +36,7 @@
                                 <option value="three">Three</option>
                                 <option value="four">Four</option>
                             </select>
-                            <input type="text" name="step_title" id="step_title_id" placeholder="Extension title"></input>
+                            <input type="text" name="step_title" id="step_title_id" placeholder="Extension title">
                             <button class="list-remove-2 btn"> Remove</button>
                             <button class="list-edit-2 btn"> Add description</button>
                         </div>
@@ -52,9 +47,7 @@
             <button class="close">Cancel</button>
             <button class="close">Save</button>
         </div>
-
+        <!--TERMINA POPUP-->
     </div>
     <button class="list-add btn"> Add</button>
 </div>
-            
-
