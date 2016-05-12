@@ -124,9 +124,8 @@ body {
 	border: 0;
 	font-family: 'Roboto', sans-serif;
 	text-transform: uppercase; 
-	color: white;
 	font-weight: 500;
-	padding: 7px 20px;
+	padding: 7px 12px;
 	margin: 5px;
 	border-radius: 2px;
 	font-size: 15px;
@@ -170,9 +169,7 @@ form {
 }
 
 input[type="text"],
-input[type="email"],
-textarea,
-select {
+textarea{
 	width: auto;
 	box-sizing: border-box;
 	font-family: 'Roboto Condensed', sans-serif;
@@ -195,7 +192,7 @@ textarea {
 	resize: vertical;
 }
 
-form *:focus {
+form input[type="text"]{
 	border-bottom: 2px #3EC4B5 solid;
 	color: #444444;
 }
@@ -304,4 +301,27 @@ svg {
 
 .formButtons {
 	color: #444;
+}
+
+.btn{
+	color: #444;
+	border: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase; 
+	font-weight: 500;
+	padding: 4px 7px;
+	margin: 5px 2px;
+	border-radius: 3px;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.btn:active{
+	background-color: rgba(0, 0, 0, 0.1); 
+}
+
+@media screen and (max-width: 480px) {
+    .buttons button {
+		flex: 1;
+	}
 }
