@@ -33,6 +33,7 @@
                     btn = $(".list-item:last .list-edit");
                 $(popup).makePopup(btn);
 
+                $(".actors_list:last").dynamiclist_level2();
                 $(".steps_list:last").dynamiclist_level2();
                 $(".extensions_list:last").dynamiclist_level2();
             },
