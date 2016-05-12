@@ -8,6 +8,20 @@
 		<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="assets/css/style.css">
 		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+		<script type="text/javascript">
+			function showMe(){
+     		
+     		var len = document.getElementsByName('use_case_title').length;
+     		var paragraf= document.getElementById("demo");
+     		for (i=0;i<len;i++)
+     		{
+     			var node = document.createTextNode(document.getElementsByName("use_case_title")[i].value + ",");
+	                paragraf.appendChild(node);
+     		}
+	        //document.getElementById("demo").innerHTML = "";
+	        return false;
+	    }
+		</script>
 	</head>
 	<body>
 		<div class="flex container scroll">
@@ -132,8 +146,9 @@
 					<div class="formButtons flex spaceBetween buttons">
 						<button id="resetBtn" class="pinkBtn">RESET</button>
 						<div class="formButtons2 flex row">
-							<button id="saveDraftBtn" class="greenBtn">SAVE DRAFT</button>
+							<button id="saveDraftBtn" class="greenBtn" onclick="showMe()">SAVE DRAFT</button>
 							<button onclick="location.href='finish.html'" id="submitBtn" class="blueBtn">SUBMIT</button>
+							    <p id="demo"></p>
 						</div>
 					</div>
 				</div>
