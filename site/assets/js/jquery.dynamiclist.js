@@ -37,6 +37,10 @@
                     btn2 = $("#usecase_list").find(".list-item:last").children(".list-edit");
                 popup2.makePopup(btn2);
 
+                var popup3 = $("#stakeholdersList").find(".list-item:last").children(".popup"),
+                    btn3 = $("#stakeholdersList").find(".list-item:last").children(".list-edit");
+                popup3.makePopup(btn3);
+
                 $(".actors_list:last").dynamiclist_level2();
                 $(".steps_list:last").dynamiclist_level2();
                 $(".extensions_list:last").dynamiclist_level2();
