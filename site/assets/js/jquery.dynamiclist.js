@@ -29,9 +29,13 @@
             withEvents: false,
             addCallbackFn:
             function(){
-                var popup = $(".list-item:last .popup"),
-                    btn = $(".list-item:last .list-edit");
-                $(popup).makePopup(btn);
+                var popup = $("#actorsList").find(".list-item:last").children(".popup"),
+                    btn = $("#actorsList").find(".list-item:last").children(".list-edit");
+                popup.makePopup(btn);
+
+                var popup2 = $("#usecase_list").find(".list-item:last").children(".popup"),
+                    btn2 = $("#usecase_list").find(".list-item:last").children(".list-edit");
+                popup2.makePopup(btn2);
 
                 $(".actors_list:last").dynamiclist_level2();
                 $(".steps_list:last").dynamiclist_level2();
