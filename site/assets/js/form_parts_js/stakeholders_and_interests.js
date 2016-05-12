@@ -1,10 +1,11 @@
 (function($) {
-$(document).ready(function() {
+	$(document).ready(function() {
 
-	$("#formStakeholders").load("form_parts/stakeholders_interests.html", function(){
-		// stakeholderPopulate();
-		$("#StakeholdersList").dynamiclist();
-	    	//bagati codul aici
+		$("#formStakeholders").load("form_parts/stakeholders_interests.html", function(){
+			// stakeholderPopulate();
+			$(".stakeholderEditView").makePopup("#stakeholdersList .list-edit");
+			$("#stakeholdersList").dynamiclist();
+				//bagati codul aici
 	    });
 	});
 })(jQuery);
