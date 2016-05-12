@@ -14,30 +14,31 @@ jQuery.fn.extend({
 });
 
 $.fn.makePopup = function(modalBtn) {
-   // var toggleObject = $(selector);
-  // Get the modal
+
+		//the popup:
 		var modal = $(this);
 
-		// Get the button that opens the modal
+		//the button that opens the popup
 		var btn = $(modalBtn);
 
-		// Get the <span> element that closes the modal
-		var span = $(".close");//document.getElementsByClassName("close")[0];
+		//the element that closes the popup
+		var close = $(".close");//document.getElementsByClassName("close")[0];
 
 		// When the user clicks the button, open the modal 
-		btn.onclick = function() {
-		    modal.style.display = "block";
-		}
+		btn.click(function() {
+			modal.css('display','block');
+		});
 
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() {
-		    modal.style.display = "none";
-		}
+		// When the user clicks on <close> (x), close the modal
+		close.click(function() {
+		    modal.css('display','none');
+		});
 
 		// When the user clicks anywhere outside of the modal, close it
-		window.onclick = function(event) {
-		    if (event.target == modal) {
-		        modal.style.display = "none";
-		    }
-		}
+		// window.click(event, function() {
+		// 	if (event.target == modal) {
+		//         modal.css('display','none');
+		//     }
+		// });
+		//BUGGED
 };
