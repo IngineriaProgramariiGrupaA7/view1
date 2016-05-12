@@ -166,11 +166,15 @@ body {
 
 form {
 	flex: 1;
+	font-family: 'Roboto', sans-serif;
+}
+
+input[name="authorField"] {
+	flex: 1;
 }
 
 input[type="text"],
 textarea{
-	width: auto;
 	box-sizing: border-box;
 	font-family: 'Roboto Condensed', sans-serif;
 	background: #F5F5F5;
@@ -305,6 +309,7 @@ svg {
 }
 
 .btn{
+	flex: 0;
 	color: #444;
 	border: 0;
 	font-family: 'Roboto', sans-serif;
@@ -312,9 +317,14 @@ svg {
 	text-transform: uppercase; 
 	font-weight: 500;
 	padding: 4px 7px;
-	margin: 5px 2px;
 	border-radius: 3px;
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+	margin: 10px 0 0 2px;
+}
+
+.leftMargin {
+	margin: 10px 0 0 5px;
+	height: 100%;
 }
 
 .btn:active{
