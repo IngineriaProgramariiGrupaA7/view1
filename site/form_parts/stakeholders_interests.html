@@ -1,12 +1,19 @@
-<div  id="StakeholdersList">
+<div  id="stakeholdersList">
 	<div class="list-item">
     	<span class="stakeholder_name">Untitled</span>
 		<button class="list-remove btn leftMargin"> Remove</button>
         <button class="list-edit btn leftMargin"> Edit</button>
 	
-		<div class="StakeholderEditView hidden popup" >
-        	<p style="background-color: gray" class="close">This is the full-screen "popup" thing that you should not see.
-        	"Edit" should show this thing</p>
+		<div class="stakeholderEditView hidden popup" >
+				<h3 class="title">Edit stakeholder</h3>
+				
+				<form onsubmit="return false;">
+					<input type="text" name="stakeholder_title" id="StakeholderTitleId" placeholder="Stakeholder title"></input><br>
+					<textarea type="text" name="interests_field" rows="4" cols="50" placeholder="Stakeholder interests"></textarea><br>
+					 <button id="cancelBtn" class="pinkBtn close">cancel</button>
+					 <button id="saveBtn" class="greenBtn close">save</button>
+
+				</form>
         </div>
 	</div>	
 	<button class="list-add btn">ADD</button>
