@@ -1,32 +1,20 @@
-jQuery.fn.extend({
-    popup: function (popupId) {
- //        var text = $(this).text();
- //        var zigzagText = '';
- //        var toggle = true; //lower/uppper toggle
-	// 		$.each(text, function(i, nome) {
-	// 			zigzagText += (toggle) ? nome.toUpperCase() : nome.toLowerCase();
-	// 			toggle = (toggle) ? false : true;
-	// 		});
-	// return zigzagText;
-
-	
-    }
-});
-
 $.fn.makePopup = function(modalBtn) {
 
 		var modal = $(this);
-		modal.css('display','none');
+		modal.addClass('hidden');
+		modal.removeClass('flex');
 
 		var btn = $(modalBtn);
 
-		var close = $(modal).children(".close");
+		var close = $(modal).find(".close");
 
 		btn.click(function() {
-			modal.css('display','block');
+			modal.addClass('flex');
+			modal.removeClass('hidden');
 		});
 
 		close.click(function() {
-		    modal.css('display','none');
+		    modal.addClass('hidden');
+		    modal.removeClass('flex');
 		});
 };
