@@ -3,49 +3,59 @@
         <span class="usecase_name">Untitled</span>
         <button class="list-remove btn leftMargin">Remove</button>
         <button class="list-edit btn leftMargin">Edit</button>
-        <div class="usecase_edit_view hidden popup flex container scroll">
+        <div class="usecase_edit_view popup flex containerPopup scroll">
             <!--INCEPE POPUP-->
-            <form onsubmit="return false;" class="flex column main flexBasis center">
-                <input type="text" name="use_case_title" id="use_case_title_id" placeholder="Use-case title"/><br>
-                <textarea type="text" name="objective_field" rows="4" cols="50" placeholder="Objective/Context"/><br>
-                <p>Actor
-                    <select>
-                        <option value="one">One</option>
-                        <option value="two">Two</option>
-                        <option value="three">Three</option>
-                        <option value="four">Four</option>
-                    </select>
-                </p>
-                <p>Steps
-                    <div class="steps_list">
-                        <div class="list-item-2">
-                            <input type="text" name="step_title" id="step_title_id" placeholder="Step title">
-                            <button class="list-remove-2 btn"> Remove</button>
-                            <button class="list-edit-2 btn"> Add description</button>
+            <div class="flex column main center">
+                <form onsubmit="return false;" >
+                    <h1 class="title">Sheet Editor</h1>
+                    <p class="description">
+                        Complete the form to generate diagrams.
+                    </p>
+    
+                    <!-- 
+                    <input type="text" name="use_case_title" id="use_case_title_id" placeholder="Use-case title"/><br>
+                    <textarea type="text" name="objective_field" rows="4" cols="50" placeholder="Objective/Context"/><br>
+                    <p>Actor
+                        <select>
+                            <option value="one">One</option>
+                            <option value="two">Two</option>
+                            <option value="three">Three</option>
+                            <option value="four">Four</option>
+                        </select>
+                    </p>
+                    <p>Steps
+                        <div class="steps_list">
+                            <div class="list-item-2">
+                                <input type="text" name="step_title" id="step_title_id" placeholder="Step title">
+                                <button class="list-remove-2 btn"> Remove</button>
+                                <button class="list-edit-2 btn"> Add description</button>
+                            </div>
+                            <button class="list-add-2 btn"> Add</button>
                         </div>
-                        <button class="list-add-2 btn"> Add</button>
-                    </div>
-                </p>
-                <p>Extensions</p>
-                <p>
-                    <div class="extensions_list">
-                        <div class="list-item-2">
-                            <select>
-                                <option value="none">Step title</option>
-                                <option value="two">Two</option>
-                                <option value="three">Three</option>
-                                <option value="four">Four</option>
-                            </select>
-                            <input type="text" name="step_title" id="step_title_id" placeholder="Extension title">
-                            <button class="list-remove-2 btn"> Remove</button>
-                            <button class="list-edit-2 btn"> Add description</button>
+                    </p>
+                    <p>Extensions</p>
+                    <p>
+                        <div class="extensions_list">
+                            <div class="list-item-2">
+                                <select>
+                                    <option value="none">Step title</option>
+                                    <option value="two">Two</option>
+                                    <option value="three">Three</option>
+                                    <option value="four">Four</option>
+                                </select>
+                                <input type="text" name="step_title" id="step_title_id" placeholder="Extension title">
+                                <button class="list-remove-2 btn"> Remove</button>
+                                <button class="list-edit-2 btn"> Add description</button>
+                            </div>
+                            <button class="list-add-2 btn"> Add</button>
                         </div>
-                        <button class="list-add-2 btn"> Add</button>
-                    </div>
-                </p>
-            </form>
-            <button class="close">Cancel</button>
-            <button class="close">Save</button>
+                    </p>
+                    -->
+                    <button class="close">Cancel</button>
+                    <button class="close">Save</button>
+                    
+                </form>
+            </div>
         </div>
         <!--TERMINA POPUP-->
     </div>
