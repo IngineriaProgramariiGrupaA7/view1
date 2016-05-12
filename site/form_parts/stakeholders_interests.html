@@ -4,17 +4,23 @@
 		<button class="list-remove btn leftMargin"> Remove</button>
         <button class="list-edit btn leftMargin"> Edit</button>
 	
-		<div class="stakeholderEditView hidden popup" >
-				<h3 class="title">Edit stakeholder</h3>
-				
-				<form onsubmit="return false;">
-					<input type="text" name="stakeholder_title" id="StakeholderTitleId" placeholder="Stakeholder title"></input><br>
-					<textarea type="text" name="interests_field" rows="4" cols="50" placeholder="Stakeholder interests"></textarea><br>
-					 <button id="cancelBtn" class="pinkBtn close">cancel</button>
-					 <button id="saveBtn" class="greenBtn close">save</button>
-
-				</form>
-        </div>
+		<div class="stakeholderEditView hidden popup flex containerPopup scroll" >
+				            <!--INCEPE POPUP-->
+				<div class="flex column mainPopup center">
+					<form onsubmit="return false;">
+						<h3 class="title">Edit stakeholder</h3>
+						<input type="text" name="stakeholder_title" id="StakeholderTitleId" placeholder="Stakeholder title"></input><br>
+						<textarea type="text" name="interests_field" rows="4" cols="50" placeholder="Stakeholder interests"></textarea><br>
+						<div class="formAll flex column">
+							<div class="formButtons flex spaceBetween buttons">
+								<button id="cancelBtn" class="pinkBtn close">cancel</button>
+								<button id="saveBtn" class="greenBtn close">save</button>
+							</div>
+						</div>
+					</form>	
+				</div>
+				        	<!--v TERMINA POPUP-->			
+	   </div>						                
 	</div>	
 	<button class="list-add btn">ADD</button>
 
