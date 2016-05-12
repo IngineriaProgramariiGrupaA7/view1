@@ -17,6 +17,7 @@ $.fn.makePopup = function(modalBtn) {
 
 		//the popup:
 		var modal = $(this);
+		modal.css('display','none');
 
 		//the button that opens the popup
 		var btn = $(modalBtn);
