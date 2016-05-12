@@ -29,9 +29,22 @@
             withEvents: false,
             addCallbackFn:
             function(){
-                var popup = $(".list-item:last .popup"),
-                    btn = $(".list-item:last .list-edit");
-                $(popup).makePopup(btn);
+                // var popup = $(this).parent().children(".list-item:last").children(".popup"),
+                //     btn = $(this).parent().children(".list-item:last").children(".list-edit");
+
+                var popup = $("#actorsList").find(".list-item:last").children(".popup"),
+                    btn = $("#actorsList").find(".list-item:last").children(".list-edit");
+                popup.makePopup(btn);
+
+                var popup2 = $("#usecase_list").find(".list-item:last").children(".popup"),
+                    btn2 = $("#usecase_list").find(".list-item:last").children(".list-edit");
+                popup2.makePopup(btn2);
+
+                popup.css('border','5px red solid');
+
+                $(this).css('border','5px red solid');
+                $(this).toggleClass('AKSLSKJGFLASKJGFLAKSJFKLJSAG');
+
 
                 $(".actors_list:last").dynamiclist_level2();
                 $(".steps_list:last").dynamiclist_level2();
