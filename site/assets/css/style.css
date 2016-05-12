@@ -123,6 +123,7 @@ body {
 .buttons button {
 	border: 0;
 	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase; 
 	color: white;
 	font-weight: 500;
 	padding: 7px 20px;
