@@ -2,15 +2,17 @@
 (function($) {
     $(document).ready(function() {
 
-	    $("#form_actors").load("form_parts/actors_objectives.html", function() {authorBussiness()});
-	      
+        $("#formActors").load("form_parts/actors_objectives.html", function(){
+            $("#actorsList").dynamiclist();
+        });
+        
     });
-
 })(jQuery);
+/*
 function actorsBussiness()
 			{
 			        // Get the modal
-			    var modal = document.getElementById('openModal');
+			    var modal = document.getElementById('myModal');
 
 			    // Get the button that opens the modal
 			    var btn = document.getElementById("myBtn");
@@ -88,4 +90,4 @@ function actorsBussiness()
                     var rowContainer = document.createElement('p');
                     rowContainer.appendChild(buttonAdd);
                     container.appendChild(rowContainer);
-        }
+        }*/

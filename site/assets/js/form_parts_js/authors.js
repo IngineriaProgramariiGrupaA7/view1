@@ -1,9 +1,9 @@
 $(document).ready(function() {
 
-    $("#form_authors").load("form_parts/authors.html", function(){ $("#authors_list").dynamiclist() });
-	
-    //aici bagati codul
-})(jQuery);
+    $("#formAuthors").load("form_parts/authors.html", function(){ 
+        $("#authorsList").dynamiclist() });
+
+});
 /*
 function addFields(){
 
