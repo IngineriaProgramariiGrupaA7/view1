@@ -6,7 +6,6 @@
 	<form onsubmit="return false;">
 		<input type="text" name="use_case_title" id="use_case_title_id" placeholder="Use-case title"></input><br>
 		<textarea type="text" name="objective_field" rows="4" cols="50" placeholder="Objective/Context"></textarea><br>
-	</form>
 		<p>Actor
 			<select>
 				<option value="one">One</option>
@@ -42,17 +41,19 @@
 				<button class="list-add btn"> Add</button>
 			</div>
 		</p>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script src="../assets/js/jquery.dynamiclist.min.js"></script>
-	<script>
-		(function($) {
-		$(document).ready(function() {
-			$("#steps_list").dynamiclist();	
-			$("#extensions_list").dynamiclist();	
-			});
-		})(jQuery);
-	</script>
-	<button>Cancel</button>
-	<button>Save</button>
 
+		<button>Cancel</button>
+		<button>Save</button>
+	</form>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="../assets/js/jquery.dynamiclist.min.js"></script>
+<script>
+	(function($) {
+	$(document).ready(function() {
+			$("#steps_list").dynamiclist();
+			$("#extensions_list").dynamiclist();
+		});
+	})(jQuery);
+</script>
