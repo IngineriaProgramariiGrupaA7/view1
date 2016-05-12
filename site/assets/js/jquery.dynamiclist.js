@@ -27,12 +27,11 @@
             minSize: 0,
             maxSize: 999,
             withEvents: false,
-            addCallbackFn: function(){
+            addCallbackFn:
+            function(){
                 var popup = $(".list-item:last .popup"),
                     btn = $(".list-item:last .list-edit");
                 $(popup).makePopup(btn);
-                popup.css('background-color','red');
-                btn.css('background-color','blue');
             },
             removeCallbackFn: null
         }, options);

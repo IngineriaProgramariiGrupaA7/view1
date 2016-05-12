@@ -20,7 +20,7 @@ $.fn.makePopup = function(modalBtn) {
 
 		var btn = $(modalBtn);
 
-		var close = $(".close");
+		var close = $(modal).children(".close");
 
 		btn.click(function() {
 			modal.css('display','block');
