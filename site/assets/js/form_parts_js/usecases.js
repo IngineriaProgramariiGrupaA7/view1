@@ -8,6 +8,7 @@
 			$(".actors_list").dynamiclist_level2();
 			$(".steps_list").dynamiclist_level2();
 			$(".extensions_list").dynamiclist_level2();
+			$(".relationships_list").dynamiclist_level2();
 	    });
 		
     });
