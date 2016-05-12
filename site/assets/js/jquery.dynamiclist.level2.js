@@ -5,7 +5,7 @@
  */
 ;(function($) {
 
-    $.fn.dynamiclist = function(options) {
+    $.fn.dynamiclist_level2 = function(options) {
         
         // support multiple elements
         if (this.length > 1) {
@@ -21,20 +21,17 @@
         
         // setting plugin default settings and overriding options
         var settings = $.extend( {
-            itemClass: "list-item",
-            addClass: "list-add",
-            removeClass: "list-remove",
+            itemClass: "list-item-2",
+            addClass: "list-add-2",
+            removeClass: "list-remove-2",
             minSize: 0,
             maxSize: 999,
             withEvents: false,
             addCallbackFn:
             function(){
-                var popup = $(".list-item:last .popup"),
-                    btn = $(".list-item:last .list-edit");
+                var popup = $(".list-item-2:last .popup-2"),
+                    btn = $(".list-item-2:last .list-edit-2");
                 $(popup).makePopup(btn);
-
-                $(".steps_list:last").dynamiclist_level2();
-                $(".extensions_list:last").dynamiclist_level2();
             },
             removeCallbackFn: null
         }, options);
