@@ -26,7 +26,7 @@
             removeClass: "list-remove",
             minSize: 0,
             maxSize: 999,
-            withEvents: false,
+            withEvents: true,
             addCallbackFn:
             function(){
                 var popup = $("#actorsList").find(".list-item:last").children(".popup"),

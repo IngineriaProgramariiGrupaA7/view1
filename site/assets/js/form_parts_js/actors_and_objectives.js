@@ -37,6 +37,7 @@
 					inherits: $('.inherits', this).val(),
 				};
 
+				$('.close',$parent).click();
 			})
 	    });
 
