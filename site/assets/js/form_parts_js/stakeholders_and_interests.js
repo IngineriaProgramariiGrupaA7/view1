@@ -5,7 +5,41 @@
 			// stakeholderPopulate();
 			$(".stakeholderEditView").makePopup("#stakeholdersList .list-edit");
 			$("#stakeholdersList").dynamiclist();
-				//bagati codul aici
+			
+			//bagati codul aici
+			$('#stakeholdersList .list-add.btn').on('click', function(){
+				if(stakeholdersAndInterestsIndex == 0) {
+					$('#stakeholdersList .list-item:first').attr('index', stakeholdersAndInterestsIndex);
+				}
+				stakeholdersAndInterestsIndex++;
+				$('#stakeholdersList .list-item:last').attr('index', stakeholdersAndInterestsIndex);
+			});
+
+			$('#stakeholdersList .list-item .list-remove.btn').on('click', function(){
+				var $parent = $(this).closest('.list-item');
+				var index = $parent.attr('index');
+				delete json.stakeholdersAndInterests[index];
+			});
+
+			$('.saveBtnSI').on('click',function(){
+				$(this).closest('.mainPopup').find('.frmStakeholdersAndInterests').submit();
+			});
+
+			$('.frmStakeholdersAndInterests').on('submit',function(e){
+				var $parent = $(this).closest('.list-item');
+				var name = $('.stakeholder_title', this).val();
+				var index = $parent.attr('index');
+				if(index == undefined)
+					index = 0;
+
+				$parent.find('span.stakeholder_name').text(name);
+				json.stakeholdersAndInterests[index] = {
+					name: name,
+					interests: $('.interests_field', this).val(),
+				};
+
+				$('.close',$parent).click();
+			});
 	    });
 	});
 })(jQuery);
