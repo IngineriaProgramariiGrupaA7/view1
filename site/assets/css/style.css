@@ -13,6 +13,13 @@ _pink				#DF739E
 _green				#3EC46D
 
 */
+::selection {
+  background: #E6E6E6; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #E6E6E6; /* Gecko Browsers */
+}
+
 a {
 	text-decoration: none;
 	color: #444444;
@@ -237,6 +244,16 @@ select {
 	border-bottom: 2px #BBBBBB solid;
 	outline: 0;
 	margin-bottom: 5px;
+}
+
+select option:checked {
+    box-shadow: 0 0 10px 100px #3EC4B5 inset;
+    color: white;
+}
+
+select:focus > option:checked { 
+    background: #3EC4B5 !important;
+    color: white;
 }
 
 textarea {
