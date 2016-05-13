@@ -21,7 +21,7 @@
 
 			$('.saveBtnAO').on('click',function(){
 				$(this).closest('.mainPopup').find('.frmActorsObjectives').submit();
-			})
+			});
 
 			$('.frmActorsObjectives').on('submit',function(){
 				var $parent = $(this).closest('.list-item');
@@ -38,7 +38,7 @@
 				};
 
 				$('.close',$parent).click();
-			})
+			});
 	    });
 
 

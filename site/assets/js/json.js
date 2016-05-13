@@ -4,8 +4,10 @@ var json = {
 	domain: '',
 	authors: {},
 	actorsAndObjectives: {},
-	stakeholdersAndInterest: {},
+	stakeholdersAndInterests: {},
 	usecases: {},
 };
 
 var actorsAndObjectivesIndex = 0;
+var stakeholdersAndInterestsIndex = 0;
+var authorsIndex = 0;
