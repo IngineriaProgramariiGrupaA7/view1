@@ -62,6 +62,7 @@
                 // clone new item from first item
                 var item = list.find("." + settings.itemClass + ":first").clone(
                     settings.withEvents);
+				
 
                 // register new item remove link
                 item.find("." + settings.removeClass).show().click(function(event) {
@@ -71,6 +72,11 @@
                 // clean up new item
                 normalizeItem(item, length);
                 clearItem(item);
+				
+				//Replace new name of item with Untitled
+				item.find(".stakeholder_name").text("Untitled");
+				item.find(".actors_name").text("Untitled");
+				item.find(".usecase_name").text("Untitled");
 
                 // add new item
                 var last = list.find("." + settings.itemClass + ":last");
@@ -163,4 +169,6 @@
         
         return init(this);  
     }
+	
+	
 })(jQuery);
