@@ -7,14 +7,14 @@
 		<div class="stakeholderEditView popup flex containerPopup scroll" >
 				            <!--INCEPE POPUP-->
 				<div class="flex column mainPopup center">
-					<form onsubmit="return false;">
-						<input type="text" name="stakeholder_title" id="StakeholderTitleId" placeholder="Stakeholder title"></input><br>
-						<textarea type="text" name="interests_field" rows="4" cols="50" placeholder="Stakeholder interests"></textarea><br>
-						
+
+					<form onsubmit="return false;" class="frmStakeholdersAndInterests">
+						<input type="text" name="stakeholder_title" class="stakeholder_title" placeholder="Stakeholder title"/><br>
+						<textarea type="text" name="interests_field" class="interests_field" rows="4" cols="50" placeholder="Stakeholder interests"></textarea><br>
 						<div class="formAll flex column">
 							<div class="formButtons flex spaceBetween buttons">
-								<button id="cancelBtn" class="pinkBtn close">cancel</button>
-								<button id="saveBtn" class="greenBtn close">save</button>
+								<button class="pinkBtn close cancelBtn">cancel</button>
+								<button class="greenBtn saveBtnSI">save</button>
 							</div>
 						</div>
 						
