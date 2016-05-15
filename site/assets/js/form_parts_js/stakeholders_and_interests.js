@@ -25,6 +25,10 @@
 				$(this).closest('.mainPopup').find('.frmStakeholdersAndInterests').submit();
 			});
 
+			$('.stakeholderEditView .cancelBtn').on('click',function(e){
+				e.preventDefault();
+			});
+
 			$('.frmStakeholdersAndInterests').on('submit',function(e){
 				var $parent = $(this).closest('.list-item');
 				var name = $('.stakeholder_title', this).val();
