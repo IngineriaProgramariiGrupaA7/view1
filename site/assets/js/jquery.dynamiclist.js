@@ -29,6 +29,27 @@
             withEvents: true,
             addCallbackFn:
             function(){
+                /**
+                 * BUG: cand vreau sa adaug un alt actor in use-case, dupa ce dau click pe butonul Add se adauga mai multe
+                 * dropdown-uri... mai exact cati actori atatea dropdown-uri:
+                 * cazul cu 2 actori: http://screencast.com/t/JLfVqUvt1mn
+                 * cazul cu 3 actori: http://screencast.com/t/WvrydEF0KoJZ
+                 *
+                 * Problema e din cauza ca la butonul Add de la Actori&Obiective http://screencast.com/t/mzv2oeAg
+                 * la fiecare click se executa codul destinat use-case-urilor http://screencast.com/t/Jzf3C3sV
+                 *
+                 * In opinia mea, libraria dynamiclist nu trebuia folosita in acest mod:
+                 * 1. fiind o librarie nu trebuia modificata in nici un fel
+                 * 2. functia addCallbackFn nu trebuia definita aici pentru ca e apelata pentru toate instantele librariei
+                 *
+                 * Ea trebuia folosita in modul urmator(cum e si pe pagina autorului http://screencast.com/t/d2WYCEOGFNHX):
+                 * $("#usecase_list").dynamiclist({
+                 *      addCallbackFn: function(){
+                 *          //functie callback corecta
+                 *      }
+                 * });
+                 *
+                 */
                 var popup = $("#actorsList").find(".list-item:last").children(".popup"),
                     btn = $("#actorsList").find(".list-item:last").children(".list-edit");
                 popup.makePopup(btn);

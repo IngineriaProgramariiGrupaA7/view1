@@ -36,7 +36,7 @@
 				if(index == undefined)
 					index = 0;
 
-				$parent.find('span.stakeholder_name').text(name);
+				$parent.find('span.stakeholder_name').text((name == '')?'Untitled':name);
 				json.stakeholdersAndInterests[index] = {
 					name: name,
 					interests: $('.interests_field', this).val(),
