@@ -4,11 +4,7 @@ $(document).ready(function() {
         $("#authorsList").dynamiclist();
 
         $('#authorsList .list-add.btn').on('click', function(){
-            if(authorsIndex == 0) {
-                $('#authorsList .list-item:first').attr('index', authorsIndex);
-            }
-            authorsIndex++;
-            $('#authorsList .list-item:last').attr('index', authorsIndex);
+            json.authors[$('#authorsList .list-item:last').attr('index')] = '';
         });
 
         $('#authorsList .list-item .list-remove.btn').on('click', function(){
@@ -21,8 +17,6 @@ $(document).ready(function() {
             var $parent = $(this).closest('.list-item');
             var name = $(this).val();
             var index = $parent.attr('index');
-            if(index == undefined)
-                index = 0;
 
             json.authors[index] = name;
         });

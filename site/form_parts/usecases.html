@@ -6,11 +6,11 @@
         <div class="usecase_edit_view popup flex containerPopup scroll">
             <!--INCEPE POPUP-->
             <div class="flex column mainPopup center">
-                <form onsubmit="return false;" >
+                <form onsubmit="return false;" class="frmUseCases">
    
                     
-                    <input type="text" name="use_case_title" id="use_case_title_id" placeholder="Use-case title"/></br>
-                    <textarea type="text" name="objective_field" rows="4" cols="50" placeholder="Objective/Context"/></br>
+                    <input type="text" name="use_case_title" class="use_case_title" placeholder="Use-case title"/></br>
+                    <textarea type="text" name="objective_field" class="objective_field" rows="4" cols="50" placeholder="Objective/Context"/></br>
                     <p>Actors
                         <div class="actors_list">
                             <div class="list-item-2">
@@ -23,10 +23,10 @@
                     <p>Steps
                         <div class="steps_list">
                             <div class="list-item-2">
-                                <input type="text" name="step_title" id="step_title_id" placeholder="Step title"/>
+                                <input type="text" name="step_title" class="step_title" placeholder="Step title"/>
                                 <button class="list-remove-2 btn"> Remove</button>
                                 <!-- <button class="list-edit-2 btn"> Add description</button> -->
-                                </br><textarea type="text" name="objective_field" rows="4" cols="50" placeholder="Description"/>
+                                </br><textarea type="text" name="description" class="description" rows="4" cols="50" placeholder="Description"/>
                             </div>
                             <button class="list-add-2 btn"> Add</button>
                         </div>
@@ -35,16 +35,11 @@
                     <p>
                         <div class="extensions_list">
                             <div class="list-item-2">
-                                <select>
-                                    <option value="none">Step title</option>
-                                    <option value="two">Two</option>
-                                    <option value="three">Three</option>
-                                    <option value="four">Four</option>
-                                </select>
-                                <input type="text" name="step_title" id="step_title_id" placeholder="Extension title">
+                                <select class="steps"></select>
+                                <input type="text" name="extension_title" class="extension_title" placeholder="Extension title">
                                 <button class="list-remove-2 btn"> Remove</button>
                                 <!-- <button class="list-edit-2 btn"> Add description</button> -->
-                                </br><textarea type="text" name="objective_field" rows="4" cols="50" placeholder="Description"/>
+                                </br><textarea type="text" name="description" class="description" rows="4" cols="50" placeholder="Description"/>
                             </div>
                             <button class="list-add-2 btn"> Add</button>
                         </div>
@@ -53,25 +48,15 @@
                         <div class="relationships_list">
                             <div class="list-item-2">
                                 <!-- member1 (actors/steps)-->
-                                <select>
-                                    <option value="one">One</option>
-                                    <option value="two">Two</option>
-                                    <option value="three">Three</option>
-                                    <option value="four">Four</option>
-                                </select>
+                                <select class="entity_1"></select>
                                 <!-- type -->
-                                <select>
-                                    <option value="one">Assoctiation</option>
-                                    <option value="two">Generalization</option>
-                                    <option value="three">Inclusion</option>
+                                <select class="relation">
+                                    <option value="association">Association</option>
+                                    <option value="generalization">Generalization</option>
+                                    <option value="inclusion">Inclusion</option>
                                 </select>
                                 <!-- member2 (steps)-->
-                                <select>
-                                    <option value="one">One</option>
-                                    <option value="two">Two</option>
-                                    <option value="three">Three</option>
-                                    <option value="four">Four</option>
-                                </select>
+                                <select class="entity_2"></select>
                                 <button class="list-remove-2 btn"> Remove</button>
                             </div>
                             <button class="list-add-2 btn"> Add</button>
@@ -81,8 +66,8 @@
 
                 <div class="formAll flex column">
                     <div class="formButtons flex spaceBetween buttons">
-                        <button id="cancelBtn" class="pinkBtn close">cancel</button>
-                        <button id="saveBtn" class="greenBtn close">save</button>
+                        <button id="cancelBtn" class="pinkBtn close cancelBtn">cancel</button>
+                        <button id="saveBtn" class="greenBtn saveBtnUC">save</button>
                     </div>
                 </div>
             </div>
