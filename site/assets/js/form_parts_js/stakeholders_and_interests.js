@@ -4,7 +4,14 @@
 		$("#formStakeholders").load("form_parts/stakeholders_interests.html", function(){
 			// stakeholderPopulate();
 			$(".stakeholderEditView").makePopup("#stakeholdersList .list-edit");
-			$("#stakeholdersList").dynamiclist();
+			$("#stakeholdersList").dynamiclist({
+				addCallbackFn: 
+					function(){
+		            	var popup3 = $("#stakeholdersList").find(".list-item:last").children(".popup"),
+		                    btn3 = $("#stakeholdersList").find(".list-item:last").children(".list-edit");
+		                popup3.makePopup(btn3);
+		            }
+            });
 			
 			//bagati codul aici
 			$('#stakeholdersList .list-add.btn').on('click', function(){
@@ -49,7 +56,7 @@
 })(jQuery);
 
 
-//Alex's stuff
+//Alex' stuff
 // function stakeholderPopulate(){
 	// var container = document.getElementById("stakeholders_list");
 	// var buttonAdd = document.createElement("button");

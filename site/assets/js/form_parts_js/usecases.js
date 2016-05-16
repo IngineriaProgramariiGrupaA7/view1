@@ -1,4 +1,10 @@
 
+var makePopupInUsecase = function(){
+    var popup = $(".list-item-2:last .popup-2"),
+        btn = $(".list-item-2:last .list-edit-2");
+    $(popup).makePopup(btn);
+};
+
 (function($) {
     $(document).ready(function() {
 
@@ -22,51 +28,58 @@
                     var popup2 = $("#usecase_list").find(".list-item:last").children(".popup"),
                     	btn2 = $("#usecase_list").find(".list-item:last").children(".list-edit");
                 	popup2.makePopup(btn2);
+
+
+                	$(".actors_list:last").dynamiclist({
+						itemClass: "list-item-2",
+			            addClass: "list-add-2",
+			            removeClass: "list-remove-2",
+			            addCallbackFn: makePopupInUsecase
+					});
+					$(".steps_list:last").dynamiclist({
+						itemClass: "list-item-2",
+			            addClass: "list-add-2",
+			            removeClass: "list-remove-2",
+			            addCallbackFn: makePopupInUsecase
+					});
+					$(".extensions_list:last").dynamiclist({
+						itemClass: "list-item-2",
+			            addClass: "list-add-2",
+			            removeClass: "list-remove-2",
+			            addCallbackFn: makePopupInUsecase
+					});
+					$(".relationships_list:last").dynamiclist({
+						itemClass: "list-item-2",
+			            addClass: "list-add-2",
+			            removeClass: "list-remove-2",
+			            addCallbackFn: makePopupInUsecase
+					});
                 }
             });
+
 			$(".actors_list").dynamiclist({
 				itemClass: "list-item-2",
 	            addClass: "list-add-2",
 	            removeClass: "list-remove-2",
-	            addCallbackFn:
-	            function(){
-	                var popup = $(".list-item-2:last .popup-2"),
-	                    btn = $(".list-item-2:last .list-edit-2");
-	                $(popup).makePopup(btn);
-	            }
+	            addCallbackFn: makePopupInUsecase
 			});
 			$(".steps_list").dynamiclist({
 				itemClass: "list-item-2",
 	            addClass: "list-add-2",
 	            removeClass: "list-remove-2",
-	            addCallbackFn:
-	            function(){
-	                var popup = $(".list-item-2:last .popup-2"),
-	                    btn = $(".list-item-2:last .list-edit-2");
-	                $(popup).makePopup(btn);
-	            }
+	            addCallbackFn: makePopupInUsecase
 			});
 			$(".extensions_list").dynamiclist({
 				itemClass: "list-item-2",
 	            addClass: "list-add-2",
 	            removeClass: "list-remove-2",
-	            addCallbackFn:
-	            function(){
-	                var popup = $(".list-item-2:last .popup-2"),
-	                    btn = $(".list-item-2:last .list-edit-2");
-	                $(popup).makePopup(btn);
-	            }
+	            addCallbackFn: makePopupInUsecase
 			});
 			$(".relationships_list").dynamiclist({
 				itemClass: "list-item-2",
 	            addClass: "list-add-2",
 	            removeClass: "list-remove-2",
-	            addCallbackFn:
-	            function(){
-	                var popup = $(".list-item-2:last .popup-2"),
-	                    btn = $(".list-item-2:last .list-edit-2");
-	                $(popup).makePopup(btn);
-	            }
+	            addCallbackFn: makePopupInUsecase
 			});
 	    });
 		
