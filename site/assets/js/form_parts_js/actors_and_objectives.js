@@ -42,7 +42,14 @@
 			});
 
 	    	$(".actors_edit_view").makePopup("#actorsList .list-edit");
-			$("#actorsList").dynamiclist();
+			$("#actorsList").dynamiclist({
+				addCallbackFn: 
+					function(){
+		            	var popup = $("#actorsList").find(".list-item:last").children(".popup"),
+		                    btn = $("#actorsList").find(".list-item:last").children(".list-edit");
+		                popup.makePopup(btn);
+		            }
+            });
 
 			$('#actorsList .list-add.btn').on('click', function(){
 				if(actorsAndObjectivesIndex == 0) {
