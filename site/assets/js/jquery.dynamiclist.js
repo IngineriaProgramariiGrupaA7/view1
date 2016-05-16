@@ -43,7 +43,6 @@
                 // clone new item from first item
                 var item = list.find("." + settings.itemClass + ":first").clone(
                     settings.withEvents);
-				
 
                 // register new item remove link
                 item.find("." + settings.removeClass).show().click(function(event) {
@@ -60,8 +59,11 @@
 				item.find(".usecase_name").text("Untitled");
 
                 // add new item
+                var next_index = parseInt(list.attr('next-index'));
+                item.attr('index', next_index);
                 var last = list.find("." + settings.itemClass + ":last");
                 last.after(item);
+                list.attr('next-index', next_index+1);
 				
                 // call back before adding
                 if (settings.addCallbackFn != null)
@@ -124,12 +126,18 @@
         }
         
         var init = function(list) {
-           
+
+            var $items = list.find("." + settings.itemClass);
+            var length = $items.length;
+            list.attr('next-index', length);
+            $items.each(function(i){
+                $(this).attr('index', i);
+            })
+
             // remove first item's remove link
             list.find("." + settings.itemClass + ":first " + "." + settings.removeClass).hide()           
            
             // initializes the list
-            var length = list.find("." + settings.itemClass).length;
             while (settings.minSize > length) {
                 handleAdd(list, null, settings);
                 length++;

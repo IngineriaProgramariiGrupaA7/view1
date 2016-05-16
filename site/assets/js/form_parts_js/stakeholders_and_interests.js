@@ -16,11 +16,10 @@
 			
 			//bagati codul aici
 			$('#stakeholdersList .list-add.btn').on('click', function(){
-				if(stakeholdersAndInterestsIndex == 0) {
-					$('#stakeholdersList .list-item:first').attr('index', stakeholdersAndInterestsIndex);
-				}
-				stakeholdersAndInterestsIndex++;
-				$('#stakeholdersList .list-item:last').attr('index', stakeholdersAndInterestsIndex);
+				json.stakeholdersAndInterests[$('#stakeholdersList .list-item:last').attr('index')] = {
+					name: '',
+					interests: '',
+				};
 			});
 
 			$('#stakeholdersList .list-item .list-remove.btn').on('click', function(){
@@ -41,8 +40,6 @@
 				var $parent = $(this).closest('.list-item');
 				var name = $('.stakeholder_title', this).val();
 				var index = $parent.attr('index');
-				if(index == undefined)
-					index = 0;
 
 				$parent.find('span.stakeholder_name').text((name == '')?'Untitled':name);
 				json.stakeholdersAndInterests[index] = {
