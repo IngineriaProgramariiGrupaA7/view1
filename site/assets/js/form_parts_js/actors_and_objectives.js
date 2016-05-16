@@ -43,6 +43,7 @@
 
 	    	$(".actors_edit_view").makePopup("#actorsList .list-edit");
 			$("#actorsList").dynamiclist({
+				withEvents: true,
 				addCallbackFn: 
 					function(){
 		            	var popup = $("#actorsList").find(".list-item:last").children(".popup"),

@@ -5,6 +5,7 @@
 			// stakeholderPopulate();
 			$(".stakeholderEditView").makePopup("#stakeholdersList .list-edit");
 			$("#stakeholdersList").dynamiclist({
+				withEvents: true,
 				addCallbackFn: 
 					function(){
 		            	var popup3 = $("#stakeholdersList").find(".list-item:last").children(".popup"),
