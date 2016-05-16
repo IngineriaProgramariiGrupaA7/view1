@@ -407,3 +407,45 @@ svg {
 		flex: 1;
 	}
 }
+
+/*************************************
+************ PREVIEW CSS *************
+*************************************/
+
+.sheetContainer ul{
+	padding: 0;
+	margin: 0;
+}
+
+.sheetContainer {
+	max-width: 660px;
+	margin: 30px auto;
+	background-color: white;
+	box-shadow: 0 0 5px rgba(0,0,0,.1);
+	padding: 50px;
+}
+
+.sheetContainer h1{
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.sheetContainer #title {
+	text-align: center;
+}
+
+.sheetContainer .authors{
+	text-align: center;
+}
+
+.sheetContainer .authors li{
+	display: inline-block;
+}
+
+.sheetContainer .authors{
+	margin-bottom: 30px;
+}
+
+.sheetContainer ul li:not(:last-child):after{
+	content: ',';
+}
