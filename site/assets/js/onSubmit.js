@@ -7,13 +7,24 @@ function ValidationEvent()
 		return false;
 	}	
 	
-	/*if(json.actorsAndObjectives.index == 0)
+	if(json.actorsAndObjectives[0].name == "" || json.actorsAndObjectives[0].objectives == "")
 	{
-		alert("At least one actor");
+		alert("You must complete at least one actor (title and objectives)");
 		return false;
-	}*/
+	}
 	
-	alert("All fields ok");
+	if(json.usecases[0].title == "" || json.usecases[0].objective == "")
+	{
+		alert("You must complete at least one usecase (title and objective)");
+		return false;
+	}
+	
+	if(json.usecases[0].steps[0].title == "" || json.usecases[0].steps[0].description == "")
+	{
+		alert("You cannot have a usecase without steps and actors");
+		return false;
+	}
+	
 	location.href='finish.html';
 	return true;		
 			
