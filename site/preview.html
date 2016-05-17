@@ -14,7 +14,7 @@
 			<h1>Sheet requirements</h1>
 			<hr/>
 			<h2 id="title">Title</h2>
-			<div class="authors">
+			<div class="authors" id="authors">
 				<ul>
 					<li>Author1</li>
 					<li>Author2</li>
@@ -25,7 +25,7 @@
 
 			<hr/>
 			
-			<div class="tableOfContents">
+			<div class="tableOfContents" id="tableOfContents">
 				<h3>Table of contents</h3>
 				<ol>
 					<li>Description</li>
@@ -44,39 +44,41 @@
 				</ol>
 			</div>
 			
-			<div class="description">
+			<div class="description" id="description">
 				<h3>1. Description</h3>
 				<p>
 					Form content.
 				</p>
 			</div>
 			
-			<div class="domain">
+			<div class="domain" id="domain">
 				<h3>2. Domain</h3>
 				<p>
 					Form content.
 				</p>
 			</div>
 			
-			<div class="stakeholders">
+			<div class="stakeholders" id="stakeholders">
 				<h3>3. Stackeholders and interests</h3>
-				
-				<div class="stakeholder">
-					<p>
-						Stackeholder1: Interest.
-					</p>
-				</div>
-				
-				<div class="stakeholder">
-					<p>
-						Stackeholder2: Interest.
-					</p>
-				</div>
-				
-				<div class="stakeholder">
-					<p>
-						Stackeholder3: Interest.
-					</p>
+
+				<div>
+					<div class="stakeholder">
+						<p>
+							Stackeholder1: Interest.
+						</p>
+					</div>
+
+					<div class="stakeholder">
+						<p>
+							Stackeholder2: Interest.
+						</p>
+					</div>
+
+					<div class="stakeholder">
+						<p>
+							Stackeholder3: Interest.
+						</p>
+					</div>
 				</div>
 			</div>
 			
@@ -213,5 +215,8 @@
 				
 			</div>
 		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="assets/js/jquery-2.1.4.min.js"><\/script>')</script>
+		<script src="assets/js/preview.js"></script>
 	</body>
 </html>
