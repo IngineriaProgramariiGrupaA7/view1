@@ -24,8 +24,18 @@ function ValidationEvent()
 		alert("You cannot have a usecase without steps and actors");
 		return false;
 	}
-	
-	location.href='finish.html';
+
 	return true;		
 			
 }
+
+$(document).ready(function(){
+	$('#submitBtn').click(function(e){
+		if(ValidationEvent()) {
+			$('#json_field').val(JSON.stringify(json));
+			$('#frmSubmit').submit();
+		} else {
+			e.preventDefault();
+		}
+	})
+});

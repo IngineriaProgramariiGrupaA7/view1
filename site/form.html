@@ -133,11 +133,14 @@
 						<button id="resetBtn" class="pinkBtn">RESET</button>
 						<div class="formButtons2 flex row">
 							<button id="saveDraftBtn" class="greenBtn">SAVE DRAFT</button>
-							<button onclick="ValidationEvent()" id="submitBtn" class="blueBtn">SUBMIT</button>
+							<form method="post" action="finish.html" id="frmSubmit">
+								<input type="hidden" name="json" id="json_field"/>
+								<button id="submitBtn" class="blueBtn">SUBMIT</button>
+							</form>
+							</div>
 						</div>
 					</div>
 				</div>
-
 			</div>
 		</div>
 	</div>
