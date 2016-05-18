@@ -1,4 +1,4 @@
-var json = {
+json = {
 	title: '',
 	description: '',
 	domain: '',
