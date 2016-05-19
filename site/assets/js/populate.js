@@ -1,4 +1,9 @@
 var jsonParser = function(data) {
+
+	//update the output json, 
+	//as filling the form programatically 
+	//doesn't trigger the normal events;
+	json = data;
 	
 	//title
 	$("#titleid").val(data.title);
@@ -56,22 +61,36 @@ var jsonParser = function(data) {
 			if(actorIndex != 0){
 				$(".actors_list:last .list-add-2").trigger("click"); //asta face o eroare si nu mai merge save;
 			}
-			alert(actorValue);
-			$(".actors_list:last .actors:last").val(actorValue);//.css("background-color", "red");
+			$(".actors_list:last .actors:last").val(actorValue);
+		});
+
+		//steps
+		$.each(value.steps, function( stepIndex, stepValue){
+			if(stepIndex != 0){
+				$(".steps_list:last .list-add-2").trigger("click");
+			}
+			$(".steps_list:last .step_title:last").val(stepValue.title);
+			$(".steps_list:last .description:last").val(stepValue.description);
+		});
+
+		// extensions
+		$.each(value.extensions, function( extIndex, extValue){
+			if(extIndex != 0){
+				$(".extensions_list:last .list-add-2").trigger("click");
+			}
+			$(".extensions_list:last .extension_title:last").val(extValue.title);
+			$(".extensions_list:last .description:last").val(extValue.description);
 		});
 
 		$("#usecase_list").find(".saveBtnUC:last").trigger("click");
 	});
 
-	//update the output json, 
-	//as filling the form programatically 
-	//doesn't trigger the normal events;
-	json = data;
+	
 }
 
 $(document).ready(function() {
 
 
-	$.getJSON( "assets/window.json", jsonParser);
+	//$.getJSON( "assets/window.json", jsonParser);
 
 });
