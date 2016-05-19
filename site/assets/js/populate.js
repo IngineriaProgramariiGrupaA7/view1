@@ -82,6 +82,16 @@ var jsonParser = function(data) {
 			$(".extensions_list:last .description:last").val(extValue.description);
 		});
 
+		// relationships
+		$.each(value.relationships, function( relIndex, relValue){
+			if(relIndex != 0){
+				$(".relationships_list:last .list-add-2").trigger("click");
+			}
+			$(".relationships_list:last .entity_1:last").val(relValue.entity_1);
+			$(".relationships_list:last .entity_2:last").val(relValue.entity_2);
+			$(".relationships_list:last .relation:last").val(relValue.relation);
+		});
+
 		$("#usecase_list").find(".saveBtnUC:last").trigger("click");
 	});
 
@@ -91,6 +101,6 @@ var jsonParser = function(data) {
 $(document).ready(function() {
 
 
-	//$.getJSON( "assets/window.json", jsonParser);
+	$.getJSON( "assets/window.json", jsonParser);
 
 });
