@@ -28,7 +28,10 @@ var makePopupInUsecaseSettings = {
 				}
 				$parent.find('.mainPopup select.actors').html(html);
 				$parent.find('.actors_list select.actors').each(function(){
-					$(this).val(json.usecases[index].actors[$(this).closest('.list-item-2').attr('index')]);
+					var val = json.usecases[index].actors[$(this).closest('.list-item-2').attr('index')];
+					if(val == null)
+						val = $('option:first', this).attr('value');
+					$(this).val();
 				});
 			});
 
@@ -83,6 +86,8 @@ var makePopupInUsecaseSettings = {
 				html += '<optgroup label="Actors">';
 				$parent.find('.actors_list select.actors').each(function(){
 					var key = $(this).val();
+					if(key == null)
+						key = $('option:first', this).attr('value');
 					var obj = json.actorsAndObjectives[key];
 					var name = (obj.name == '')?'Untitled':obj.name;
 					html += '<option value="actor_'+key+'">'+name+'</option>';
@@ -91,6 +96,8 @@ var makePopupInUsecaseSettings = {
 				$parent.find('.relationships_list select.entity_1, .relationships_list select.entity_2').each(function(){
 					var val = $(this).val();
 					$(this).html(html);
+					if(val == null)
+						val = $('option:first', this).attr('value');
 					$(this).val(val);
 				});
 			});
@@ -108,7 +115,9 @@ var makePopupInUsecaseSettings = {
 
 				var actors = {};
 				$parent.find('.actors_list select.actors').each(function(){
-					actors[$(this).closest('.list-item-2').attr('index')] = $(this).val();
+					var val = $(this).val();
+					if(val != null)
+						actors[$(this).closest('.list-item-2').attr('index')] = val;
 				});
 
 				var steps = {};
