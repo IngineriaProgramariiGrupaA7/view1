@@ -141,10 +141,6 @@
 						</div>
 					</div>
 				</div>
-
-				<div id="testing_stuff_dont_kill_me">
-					<p>CLICK ME</p>
-				</div>
 			</div>
 		</div>
 	</div>
@@ -165,12 +161,5 @@
 	<script src="assets/js/json.js"></script>
 	<script src="assets/js/onSubmit.js"></script>
 	<script src="assets/js/populate.js"></script>
-	<script>
-		$('#testing_stuff_dont_kill_me').click(function(){
-			var data = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(window.json));
-			$('<a href="data:' + data + '" download="window.json">download JSON</a></br>').appendTo('#testing_stuff_dont_kill_me');
-		})
-		
-	</script>
 </body>
 </html>
