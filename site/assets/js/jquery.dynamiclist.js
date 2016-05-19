@@ -26,7 +26,7 @@
             removeClass: "list-remove",
             minSize: 0,
             maxSize: 999,
-            withEvents: false,
+            withEvents: true,//clona fara evenimente-- afecta peste tot
             addCallbackFn: null,
             removeCallbackFn: null
         }, options);
