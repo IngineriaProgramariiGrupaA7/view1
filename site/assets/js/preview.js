@@ -44,7 +44,11 @@ $(document).ready(function() {
 	var html = '<div>';
 	var usecaseNr = 1;
 	for(var key in json.usecases){
-		var usecaseTitle = '<h4>5.' + usecaseNr + ' ' + json.usecases[key].title + '</h4>';
+		var usecaseActors = '';
+		for(var actor in json.usecases[key].actors){
+			usecaseActors += json.actorsAndObjectives[parseInt(json.usecases[key].actors[actor])].name + ',';
+		}
+		var usecaseTitle = '<h4>5.' + usecaseNr + ' ' + usecaseActors + ' -> ' + json.usecases[key].title + '</h4>';
 		var objectiveContext = '<h4>5.'+ usecaseNr + '.1 Objective/Context' + '</h4>' + '<p>' + json.usecases[key].objective + '</p>';	
 		var usecaseSteps = '<h4>5.' + usecaseNr + '.2 Usecase/Steps' + '</h4>' + '<ol>';
 		
