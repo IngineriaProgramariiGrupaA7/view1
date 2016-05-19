@@ -20,7 +20,7 @@ $(document).ready(function() {
 
 	$('#title').text(json.title);
 
-	var html = '<ul>';
+	var html = '<h4>Authors</h4><ul>';
 	for(var key in json.authors)
 		html += '<li>'+json.authors[key]+'</li>';
 	html += '</ul>';
