@@ -1,0 +1,16 @@
+Titlu:
+Nu se pate edita campul de la Actors and Objectives
+Pasi:
+1. deschide browser
+2. tasteaza url (localhost:8080)
+3. click Create 
+4. click Actors and Objectives
+5. click ADD
+6. tasteaza text
+7. click Edit
+
+Rezultat dorit:
+Textul salvat din casutatext nou adaugata permite modificarea lui, printr-un click de mouse pentru a fi selectat
+
+Actualul rezultat:
+Nu se pate edita campul de la la Actors and Objectives

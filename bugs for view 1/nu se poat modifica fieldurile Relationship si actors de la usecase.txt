@@ -1,0 +1,21 @@
+Titlu:
+Nu se poate modifica fieldul de la usecase
+Steps:
+1. deschide browser
+2. tasteaza url (localhost:8080)
+3. click Usecases
+4. introdu Title
+5. introdu Objeciv
+6. Selecteaza actori
+7. Introdu Titlu pasi
+8. Introdu Descrierea
+9. Introdu Titlul Extensiei,
+10. Introdu descrierea extensiei
+12. Selecteaza Relatiile
+
+
+Rezultat dorit:
+La actori si la Relatii ar trebui sa fie preluati din document.
+
+Actualul rezultat:
+Titlul nu s-a modificat. 

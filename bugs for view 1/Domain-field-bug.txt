@@ -1,0 +1,15 @@
+Test case:
+Titlu: Inputul informatiei in campul "Domeniu";
+Preconditii:
+Pasi:
+1.open browser
+2.enter url
+3.click create button
+4.click domain field
+5.click domain input field
+6.type input
+7.press enter
+
+
+Expected results: Inputul din domeniu este preluat de catre aplicatie.
+Actual results: Pagina da refresh si toate informatiile se pierd.
