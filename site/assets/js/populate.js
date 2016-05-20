@@ -61,7 +61,8 @@ var jsonParser = function(data) {
 			if(actorIndex != 0){
 				$(".actors_list:last .list-add-2").trigger("click"); //asta face o eroare si nu mai merge save;
 			}
-			$(".actors_list:last .actors:last").val(actorValue);
+			alert(actorValue);
+			$(".actors_list:last").find(".actors:last").val(actorValue);
 		});
 
 		//steps
@@ -78,6 +79,7 @@ var jsonParser = function(data) {
 			if(extIndex != 0){
 				$(".extensions_list:last .list-add-2").trigger("click");
 			}
+			$(".extensions_list:last .steps:last").val(extValue.step);
 			$(".extensions_list:last .extension_title:last").val(extValue.title);
 			$(".extensions_list:last .description:last").val(extValue.description);
 		});
