@@ -56,7 +56,7 @@ $(document).ready(function() {
 		for(var actor in json.usecases[key].actors){
 			usecaseActors += json.actorsAndObjectives[parseInt(json.usecases[key].actors[actor])].name + ',';
 		}
-		var usecaseTitle = '<h4>5.' + usecaseNr + ' ' + usecaseActors + ' -> ' + json.usecases[key].title + '</h4>';
+		var usecaseTitle = '<h3>5.' + usecaseNr + ' ' + usecaseActors + ' -> ' + json.usecases[key].title + '</h3>';
 		var objectiveContext = '<h4>5.'+ usecaseNr + '.1 Objective/Context' + '</h4>' + '<p>' + json.usecases[key].objective + '</p>';	
 		var usecaseSteps = '<h4>5.' + usecaseNr + '.2 Usecase/Steps' + '</h4>' + '<ol>';
 		
