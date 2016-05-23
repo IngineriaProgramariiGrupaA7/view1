@@ -26,19 +26,27 @@ $(document).ready(function() {
 	html += '</ul>';
 	$('#authors').html(html);
 
-	$('#description p').text(json.description);
-	$('#domain p').text(json.domain);
+	var descriptionText = json.description;
+	descriptionText = descriptionText.replace(/\/n/g, '<br />');
+	$('#description p').html(descriptionText);
+
+
+	var domainText = json.domain;
+	domainText = domainText.replace(/\/n/g, '<br />');
+	$('#domain p').html(domainText);
 
 	var html = '';
 	for(var key in json.stakeholdersAndInterests)
 		html += '<div class="stakeholder"><p>'+json.stakeholdersAndInterests[key].name+':'+json.stakeholdersAndInterests[key].interests+'</p></div>';
-
+	
+	html = html.replace(/\/n/g, '<br />');
 	$('#stakeholders div').html(html);
 	
 	var html = '';
 	for(var key in json.actorsAndObjectives)
 		html += '<div class="stakeholder"><p>'+json.actorsAndObjectives[key].name+':'+json.actorsAndObjectives[key].objectives+'</p></div>';
 
+	html = html.replace(/\/n/g, '<br />');
 	$('#actors div').html(html);
 	
 	var html = '<div>';
@@ -70,6 +78,7 @@ $(document).ready(function() {
 		html += usecaseTitle + objectiveContext + usecaseSteps + usecaseExtensions + '</div>';
 	}
 	
+	html = html.replace(/\/n/g, '<br />');
 	$('#usecases div').html(html);
 	//document.getElementById("usecases").innerHTML = html;
 	

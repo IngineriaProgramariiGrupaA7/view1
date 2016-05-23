@@ -61,7 +61,7 @@ var jsonParser = function(data) {
 			if(actorIndex != 0){
 				$(".actors_list:last .list-add-2").trigger("click"); //asta face o eroare si nu mai merge save;
 			}
-			alert(actorValue);
+			//alert(actorValue);
 			$(".actors_list:last").find(".actors:last").val(actorValue);
 		});
 
