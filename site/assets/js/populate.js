@@ -119,8 +119,16 @@ $(document).ready(function() {
 		var OK = decodeURIComponent(window.location.search.substring(1));
 
 	if(OK=="open"){
-		$.getJSON( "assets/window.json", jsonParser);
-		alert("Sunt deschis!!");
+		//$.getJSON( "assets/window.json", jsonParser);
+
+		$('#get_file').click(function() {
+		    document.getElementById('my_file').click();
+		    //alert("Sunt deschis!!");
+		    alert($("#my_file").val());
+		    //jsonParser($("#my_file").val());
+		});
+
+		
 	}
 
 });
