@@ -102,7 +102,25 @@ var jsonParser = function(data) {
 
 $(document).ready(function() {
 
+	var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
 
-	$.getJSON( "assets/window.json", jsonParser);
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
+    }
+};
+		var OK = decodeURIComponent(window.location.search.substring(1));
+
+	if(OK=="open"){
+		$.getJSON( "assets/window.json", jsonParser);
+		alert("Sunt deschis!!");
+	}
 
 });
