@@ -20,12 +20,21 @@
 				<h1 class="title">Sheet Editor</h1>
 				<p class="description">
 					Complete the form to generate diagrams.
-				</p>
-				
+				</p>			
 
 								<div class="formAll flex column">
 					<div class="formButtons flex spaceBetween buttons">
 						<button onclick="location.href='index.html'" id="backBtn" class="blueBtn">go back</button>
+
+						<!-- <input type="button" id="get_file" value="Grab file"> -->	
+						<!-- <input type="file" id="json_uploader"> -->
+						<div class="formButtons flex spaceBetween fileButtons">
+							<div class="file_upload blueBtn">
+								BROWSE
+								<input type="file" id="file_upload" name="file_upload">
+							</div>
+						</div>
+
 						<button onclick="location.href='preview.html?json='+JSON.stringify(json)" id="previewBtn" class="blueBtn">PREVIEW</button>
 					</div>
 				</div>
@@ -127,9 +136,6 @@
 				
 
 				<hr>
-
-<!-- 				<input type="button" id="get_file" value="Grab file">
- -->				<input type="file" id="json_uploader">
 				
 				<div class="formAll flex column">
 					<div class="formButtons flex spaceBetween buttons">
