@@ -449,3 +449,7 @@ svg {
 .sheetContainer ul li:not(:last-child):after{
 	content: ',';
 }
+
+#authorsList{
+	width:100%;
+}
