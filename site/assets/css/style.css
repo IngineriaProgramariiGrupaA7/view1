@@ -154,6 +154,15 @@ body {
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 2px 2px 7px 0 rgba(0, 0, 0, 0.1);
 }
 
+.simplePopup {
+	margin: auto;
+	padding: 40px;
+	background-color: #F5F5F5;
+	border-radius: 3px;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 2px 2px 7px 0 rgba(0, 0, 0, 0.1);
+}
+
+
 .buttons button {
 	cursor: pointer;
 	border: 0;
@@ -487,11 +496,12 @@ svg {
 
 .file_upload {
 	cursor: pointer;
-	width: 80px;
-	height: 20px;
+	width: 75px;
+	height: 25px;
 	text-align: center;
 	overflow: hidden;
 	position: relative;
+	line-height: 25px;
 }
 
 .file_upload:hover {
