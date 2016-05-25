@@ -126,9 +126,6 @@ $(document).ready(function() {
 		    //alert("Sunt deschis!!");
 		    alert($("#my_file").val());
 		    //jsonParser($("#my_file").val());
-		});
-
-		
+		});	
 	}
-
 });
