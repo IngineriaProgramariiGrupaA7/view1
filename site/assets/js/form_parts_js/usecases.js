@@ -86,7 +86,7 @@ var makePopupInUsecaseSettings = {
 			 * 		1. dropdown-urile de la sectiunea 'Relationships'
 			 * 		2. dropdown-urile cu pasi de la sectiunea 'Extensions'
 			 */
-			$('#usecase_list .steps_list .list-add-2.btn, #usecase_list .steps_list .list-remove-2.btn, #usecase_list .actors_list .list-add-2.btn, #usecase_list .actors_list .list-remove-2.btn').on('click', function(){
+			$('#usecase_list .steps_list .list-add-2.btn, #usecase_list .steps_list .list-remove-2.btn, #usecase_list .actors_list .list-add-2.btn, #usecase_list .actors_list .list-remove-2.btn,.steps').on('click mousedown', function(){
 				var $parent = $(this).closest('.list-item');
 				var html = ''; // folosit pt dropdown-urile cu pasi de la sectiunea 'Extensions'
 				var html_group = ''; // folosit pt dropdown-urile de la sectiunea 'Relationships'
@@ -106,6 +106,7 @@ var makePopupInUsecaseSettings = {
 					si ii vom updata optiunile. pentru a nu se pierde valoarea selectata preluam valoarea in
 					variabila temporara val si dupa ce modificam html-ul ii asignam la loc valoarea
 			  	*/
+
 				$parent.find('.extensions_list select.steps').each(function(){
 					var val = $(this).val();
 					$(this).html(html);
@@ -137,6 +138,7 @@ var makePopupInUsecaseSettings = {
 				/*
 					avem html-ul...acum updatam dropdown-urile la fel ca la extensions
 				 */
+
 				$parent.find('.relationships_list select.entity_1, .relationships_list select.entity_2').each(function(){
 					var val = $(this).val();
 					$(this).html(html);
@@ -144,6 +146,7 @@ var makePopupInUsecaseSettings = {
 					if(val == null)
 						val = $('option:first', this).attr('value');
 					$(this).val(val);
+
 				});
 			});
 
