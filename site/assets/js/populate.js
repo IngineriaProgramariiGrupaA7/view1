@@ -1,5 +1,7 @@
 var jsonParser = function(data) {
 
+	$('#openCase').addClass('hidden');
+
 	//update the output json, 
 	//as filling the form programatically 
 	//doesn't trigger the normal events;
@@ -133,11 +135,8 @@ $(document).ready(function() {
 	};
 	var OK = decodeURIComponent(window.location.search.substring(1));
 
+
 	if(OK=="open"){
-		$('#json_uploader')
-		.hover(function(){
-		 	//alert("click");
-		 	$("#json_uploader").trigger("click");
-		});
+		$('#openCase').removeClass('hidden');
 	}
 });
