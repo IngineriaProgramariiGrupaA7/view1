@@ -100,23 +100,38 @@ var jsonParser = function(data) {
 	
 }
 
+function readSingleFile(e) {
+  var file = e.target.files[0];
+  if (!file) {
+    return;
+  }
+  var reader = new FileReader();
+  reader.onload = function(e) {
+    var contents = e.target.result;
+    jsonParser(JSON.parse(contents));
+  };
+  reader.readAsText(file);
+}
+
 $(document).ready(function() {
 
+	document.getElementById('my_file').addEventListener('change', readSingleFile, false);
+
 	var getUrlParameter = function getUrlParameter(sParam) {
-    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-        sURLVariables = sPageURL.split('&'),
-        sParameterName,
-        i;
+	    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+	        sURLVariables = sPageURL.split('&'),
+	        sParameterName,
+	        i;
 
-    for (i = 0; i < sURLVariables.length; i++) {
-        sParameterName = sURLVariables[i].split('=');
+	    for (i = 0; i < sURLVariables.length; i++) {
+	        sParameterName = sURLVariables[i].split('=');
 
-        if (sParameterName[0] === sParam) {
-            return sParameterName[1] === undefined ? true : sParameterName[1];
-        }
-    }
-};
-		var OK = decodeURIComponent(window.location.search.substring(1));
+	        if (sParameterName[0] === sParam) {
+	            return sParameterName[1] === undefined ? true : sParameterName[1];
+	        }
+	    }
+	};
+	var OK = decodeURIComponent(window.location.search.substring(1));
 
 	if(OK=="open"){
 		//$.getJSON( "assets/window.json", jsonParser);
@@ -124,7 +139,7 @@ $(document).ready(function() {
 		$('#get_file').click(function() {
 		    document.getElementById('my_file').click();
 		    //alert("Sunt deschis!!");
-		    alert($("#my_file").val());
+		    //alert($("#my_file").val());
 		    //jsonParser($("#my_file").val());
 		});	
 	}
