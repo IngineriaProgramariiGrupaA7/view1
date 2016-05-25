@@ -115,11 +115,7 @@ function readSingleFile(e) {
 
 $(document).ready(function() {
 
-<<<<<<< HEAD
 	document.getElementById('json_uploader').addEventListener('change', readSingleFile, false);
-=======
-	document.getElementById('my_file').addEventListener('change', readSingleFile, false);
->>>>>>> e7f02b9a7fc8f1d7957c13e7c45c3299676e70c1
 
 	var getUrlParameter = function getUrlParameter(sParam) {
 	    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
