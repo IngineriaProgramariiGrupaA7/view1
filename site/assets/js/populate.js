@@ -120,7 +120,7 @@ $(document).ready(function() {
 
 	if(OK=="open"){
 		$.getJSON( "assets/window.json", jsonParser);
-		alert("Sunt deschis!!");
+		//alert("Sunt deschis!!");
 	}	
 
 });
