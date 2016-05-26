@@ -36,7 +36,7 @@ var makePopupInUsecaseSettings = {
 					var val = json.usecases[index].actors[$(this).closest('.list-item-2').attr('index')];
 					if(val == null)
 						val = $('option:first', this).attr('value');
-					$(this).val();
+					$(this).val(val);
 				});
 			});
 
