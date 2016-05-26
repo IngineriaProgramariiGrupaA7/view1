@@ -190,10 +190,7 @@ var makePopupInUsecaseSettings = {
 				$parent.find('.extensions_list .list-item-2').each(function(){
 					extensions[$(this).attr('index')] = {
 
-						//NOTE FOR DEBUGGING!!!//
-						//este posibil sa fie nevoie sa schimbam .steps in .extensions aici!
-						step: $('.steps', this).val(),
-						//*********************//
+						step: $('.extensions', this).val(),
 
 						title: $('.extension_title', this).val(),
 						description: $('.description', this).val(),
