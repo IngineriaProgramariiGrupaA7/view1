@@ -86,7 +86,7 @@ var makePopupInUsecaseSettings = {
 			 * 		1. dropdown-urile de la sectiunea 'Relationships'
 			 * 		2. dropdown-urile cu pasi de la sectiunea 'Extensions'
 			 */
-			$('#usecase_list .steps_list .list-add-2.btn, #usecase_list .steps_list .list-remove-2.btn, #usecase_list .actors_list .list-add-2.btn, #usecase_list .actors_list .list-remove-2.btn,.steps,.relationships_list').on('click', function(){
+			$('#usecase_list .steps_list .list-add-2.btn, #usecase_list .steps_list .list-remove-2.btn, #usecase_list .actors_list .list-add-2.btn, #usecase_list .actors_list .list-remove-2.btn,.extensions,.relationships_list').on('click', function(){
 				var $parent = $(this).closest('.list-item');
 				var html = ''; // folosit pt dropdown-urile cu pasi de la sectiunea 'Extensions'
 				var html_group = ''; // folosit pt dropdown-urile de la sectiunea 'Relationships'
