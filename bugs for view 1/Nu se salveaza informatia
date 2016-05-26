@@ -1,0 +1,26 @@
+Titlu:
+Nu se salveaza informatia
+
+Preconditions:
+Testat pe Opera si Microsoft Edge
+
+Steps:
+1. deschide browser
+2. tasteaza url (localhost:8080)
+3. click Usecases
+4. introdu Title
+5. introdu Objeciv
+6. Selecteaza actori
+7. Introdu Titlu pasi
+8. Introdu Descrierea
+9. Introdu Titlul Extensiei,
+10. Introdu descrierea extensiei
+12. Selecteaza Relatiile
+13. Se apasa pe "Preview"
+14. Se da "Back" pentru a ma intoarce la pagina cu toate datele.
+
+Rezultat dorit:
+Datele sa fie inca salvate pentru a putea da click pe "Save"
+
+Actualul rezultat:
+Datele sunt sterse.
