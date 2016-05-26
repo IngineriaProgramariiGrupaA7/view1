@@ -107,7 +107,7 @@ var makePopupInUsecaseSettings = {
 					variabila temporara val si dupa ce modificam html-ul ii asignam la loc valoarea
 			  	*/
 
-				$parent.find('.extensions_list select.steps').each(function(){
+				$parent.find('.extensions_list select.extensions').each(function(){
 					var val = $(this).val();
 					$(this).html(html);
 					$(this).val(val);
@@ -189,7 +189,12 @@ var makePopupInUsecaseSettings = {
 				var extensions = {};
 				$parent.find('.extensions_list .list-item-2').each(function(){
 					extensions[$(this).attr('index')] = {
+
+						//NOTE FOR DEBUGGING!!!//
+						//este posibil sa fie nevoie sa schimbam .steps in .extensions aici!
 						step: $('.steps', this).val(),
+						//*********************//
+
 						title: $('.extension_title', this).val(),
 						description: $('.description', this).val(),
 					};
