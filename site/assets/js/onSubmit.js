@@ -29,7 +29,6 @@ function ValidationEvent()
 	//nu merge
 	for (var i in json.usecases[0].actors) {
 		for (var i in json.usecases[0].actors) {
-			alert("cucaracha");
 			if(json.usecases[0].actors[i] = json.usecases[0].actors[j]){
 		    	alert("You cannot add the same actor twice");
 		    	return false;

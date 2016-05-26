@@ -97,6 +97,7 @@ var jsonParser = function(data) {
 		});
 
 		$("#usecase_list").find(".saveBtnUC:last").trigger("click");
+		json = data;
 	});
 
 	
